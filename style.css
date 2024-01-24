@@ -7,6 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --color-blue: #1B5083;
+}
+
 /* gen */
 a {
   text-decoration: none;
@@ -15,6 +19,16 @@ a {
 li {
   list-style-type: none;
 }
+
+.container {
+  padding: 4rem 0;
+}
+
+.row {
+  padding: 0 24px;
+}
+
+
 
 
 /* home */
@@ -85,7 +99,34 @@ li {
 .home_button {
   color: #FFF;
   font-weight: 200;
-  border: 1px solid #FFF;
   padding: 4px 16px;
-  background-color: #1B5083;
+  background-color: var(--color-blue);
+}
+
+
+/* our story */
+.about_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.heading--divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-blue);
+  margin: 4px 0 32px 0;
+}
+
+.our-story {
+  text-align: center;
+  font-weight: 200;
+  width: 100%;
+  max-width: 1000px;
 }

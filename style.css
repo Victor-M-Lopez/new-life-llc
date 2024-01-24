@@ -20,12 +20,22 @@ li {
   list-style-type: none;
 }
 
+strong {
+  font-weight: 400;
+}
+
 .container {
   padding: 4rem 0;
 }
 
 .row {
   padding: 0 24px;
+}
+
+.column_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -105,12 +115,6 @@ li {
 
 
 /* our story */
-.about_row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .section--heading {
   text-align: center;
   font-size: 24px;
@@ -125,8 +129,9 @@ li {
 }
 
 .our-story {
-  text-align: center;
+  text-align: left;
   font-weight: 200;
   width: 100%;
   max-width: 1000px;
+  margin-bottom: 32px;
 }

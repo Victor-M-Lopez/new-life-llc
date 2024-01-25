@@ -212,6 +212,22 @@ strong {
 
 
 
+/* why us */
+#why-choose-us {
+  background-image: url('./assets/AdobeStock_403345754.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.choose-us--heading {
+  color: #FFF;
+}
+
+
+
+
+
 /* footer */
 footer {
   background-color: var(--color-dark);

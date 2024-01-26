@@ -158,7 +158,7 @@ strong {
   width: 100%;
   background-color: var(--color-dark);
   height: 100px;
-  transform: skew(0deg, 5deg);
+  transform: skew(0deg, 2deg);
 }
 
 #services {
@@ -214,17 +214,63 @@ strong {
 
 /* why us */
 #why-choose-us {
+  position: relative;
   background-image: url('./assets/AdobeStock_403345754.jpeg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 2;
+  height: 500px;
+}
+.dark--overlay {
+  inset: 0;
+  background-color: #0C171C;
+  filter: opacity(0.5);
+}
+
+.dark--overlay,
+.choose-us--heading,
+.icons--container,
+.choose-us--divider {
+  position: absolute;
 }
 
 .choose-us--heading {
   color: #FFF;
 }
 
+.choose-us--divider {
+  top: 34%;
+}
 
+.icons--container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  z-index: 50;
+  top: 50%;
+  justify-content: space-between;
+}
+
+.keypoint {
+  color: #FFF;
+  font-weight: 200;
+}
+
+.icon--box {
+  width: 300px;
+  padding: 0 24px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.icon {
+
+}
 
 
 

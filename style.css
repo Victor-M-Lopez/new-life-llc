@@ -244,8 +244,8 @@ strong {
 }
 
 .icons--container {
+  padding: 0 24px;
   width: 100%;
-  max-width: 1200px;
   display: flex;
   z-index: 50;
   top: 50%;
@@ -260,7 +260,6 @@ strong {
 .icon--box {
   width: 300px;
   padding: 0 24px;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,9 +267,6 @@ strong {
   justify-content: space-evenly;
 }
 
-.icon {
-
-}
 
 
 

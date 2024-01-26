@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="48.5" y="6.5" width="3" height="13" stroke="white"/>
+<rect x="48.5" y="80.5" width="3" height="13" stroke="white"/>
+<rect x="4.5" y="52.5" width="3" height="13" transform="rotate(-90 4.5 52.5)" stroke="white"/>
+<rect x="82.5" y="52.5" width="3" height="13" transform="rotate(-90 82.5 52.5)" stroke="white"/>
+<rect x="72.5056" y="29.9196" width="3" height="13" transform="rotate(-127 72.5056 29.9196)" stroke="white"/>
+<rect x="19.5056" y="82.9196" width="3" height="13" transform="rotate(-127 19.5056 82.9196)" stroke="white"/>
+<rect x="-0.0984102" y="-0.700225" width="3" height="13" transform="matrix(0.601815 -0.798635 -0.798635 -0.601815 80.5823 82.4196)" stroke="white"/>
+<rect x="-0.0984102" y="-0.700225" width="3" height="13" transform="matrix(0.601815 -0.798635 -0.798635 -0.601815 26.5823 28.4196)" stroke="white"/>
+<circle cx="50" cy="51" r="4.5" stroke="white"/>
+<rect x="48.5" y="10.5" width="1" height="36" stroke="white"/>
+<rect x="83.7723" y="43.4612" width="0.805476" height="29.6826" transform="rotate(80.9247 83.7723 43.4612)" stroke="white" stroke-width="0.805476"/>
+<circle cx="50" cy="50" r="49.5" stroke="white"/>
+</svg>

@@ -24,3 +24,16 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active;
   })
 })
+
+
+window.onscroll = function() {navScroll()};
+
+
+function navScroll() {
+  if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+    document.getElementById('nav__overlay').className = 'nav--overlay';
+  }
+  else {
+    document.getElementById('nav__overlay').className = "";
+  }
+}

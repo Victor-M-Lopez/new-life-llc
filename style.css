@@ -57,10 +57,9 @@ strong {
   left: 0;
   right: 0;
   height: 120px;
-  background-color: #000;
-  opacity: 0.4;
-  filter: blur(1px);
-  transition: all 300ms ease-in;
+  background-color: var(--color-dark);
+  opacity: 0.8;
+  transition: all 500ms ease-in-out;
 }
 
 .nav__container {
@@ -123,9 +122,11 @@ strong {
 
 .home_button {
   color: #FFF;
+  font-size: 20px;
   font-weight: 200;
-  padding: 4px 16px;
+  padding: 8px 48px;
   background-color: var(--color-blue);
+  border-radius: 100px;
 }
 
 
@@ -419,6 +420,10 @@ footer {
   margin-top: 40px;
   gap: 80px;
   align-items: start;
+}
+
+.contact--info {
+  margin: 24px 0;
 }
 
 .copyright,

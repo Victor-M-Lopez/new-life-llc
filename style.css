@@ -194,6 +194,7 @@ strong {
 }
 
 .service--1 {
+  position: relative;
   width: 300px;
   overflow: hidden;
 }
@@ -210,6 +211,7 @@ strong {
   justify-content: center;
   height: 75px;
   background-color: var(--color-blue);
+  transition: background-color 300ms ease-in;
 }
 
 .service_text {
@@ -217,6 +219,7 @@ strong {
   font-size: 24px;
   text-align: center;
   color: #FFF;
+  transition: color 300ms ease-in;
 }
 
 .services--container {
@@ -224,6 +227,35 @@ strong {
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
+}
+
+.service--text--container--p {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.service--text--container--p a {
+  font-size: 20px;
+  font-weight: 200;
+  color: #0C171C;
+  margin: 8px 0;
+}
+
+.service--1:hover .service--text--container--p {
+  opacity: 1;
+}
+
+.service--1:hover .services_text--container {
+  background-color: #FFF;
+}
+
+.service--1:hover .service_text {
+  color: var(--color-dark);
 }
 
 

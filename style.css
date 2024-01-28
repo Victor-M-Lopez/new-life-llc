@@ -481,11 +481,11 @@ footer {
 
 /* Residential painting */
 #residential_painting {
-  margin-top: 200px;
+  margin-top: 120px;
   background-image: url('./assets/paint.jpeg');
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
   background-attachment: fixed;
 }
 
@@ -507,4 +507,40 @@ footer {
   color: var(--color-blue);
   font-weight: 200;
   font-size: 24px;
+}
+
+.img__keypoint--container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 32px;
+
+}
+
+.residential_img {
+  width: 35%;
+}
+
+.keypoints--container {
+  background-color: #E3E4DB;
+  border-radius: 4px;
+  width: 20%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keypoints_list {
+  text-align: start;
+  margin: 8px 0;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.keypoints_list::before {
+  content: url('./assets/check_mark.svg');
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
 }

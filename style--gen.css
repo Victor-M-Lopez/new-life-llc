@@ -153,3 +153,41 @@ h3 {
   gap: 32px;
 }
 
+.service__img__box--container {
+  border: 1px solid #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__img--keypoint--container {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+.service--img {
+  width: 50%;
+  display: block;
+}
+
+.keypoints--container {
+  width: 30%;
+  background-color: #1B5083;
+}
+
+.service--info--container {
+  width: 100%;
+  max-width: 50%;
+  color: #FFF;
+}
+
+.service--title {
+  margin: 12px 0;
+  font-size: 32px;
+  text-align: justify;
+}
+
+.service--info--para {
+  text-align: justify;
+  margin-bottom: 32px;
+}

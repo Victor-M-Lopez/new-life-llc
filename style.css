@@ -179,13 +179,13 @@ h3 {
   content: '';
   display: block;
   width: 100%;
-  background-color: #FFF;
+  background-color: #143450;
   height: 100px;
   transform: skew(0deg, 5deg);
 }
 
 #services {
-  background-color: #FFF;
+  background-color: #143450;
 }
 
 .services--heading {
@@ -278,6 +278,7 @@ h3 {
   z-index: 2;
   height: 500px;
 }
+
 .dark--overlay {
   inset: 0;
   background-color: #0C171C;
@@ -329,7 +330,7 @@ h3 {
 
 /* portfolio */
 #projects {
-  background-color: #FFF;
+  background-color: #143450;
 }
 
 .carousel--1 {
@@ -352,6 +353,7 @@ h3 {
   font-weight: 200;
   text-align: justify;
   margin: 8px 0;
+  color: #FFF;
 }
 
 .project--container p:last-child {

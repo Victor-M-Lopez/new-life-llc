@@ -478,39 +478,3 @@ footer {
   font-size: 14px;
   padding: 2px 8px;
 }
-
-
-
-
-
-
-
-/* Residential painting */
-#residential_painting {
-  margin-top: 120px;
-  background-image: url('./assets/paint.jpeg');
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  background-attachment: fixed;
-}
-
-.service--page--title {
-  font-size: 60px;
-  font-weight: 600;
-  color: #1B5083;
-}
-
-.service-type--container {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.service-type--container a {
-  border: 1px solid #aaa;
-  padding: 8px 24px;
-  color: var(--color-blue);
-  font-weight: 200;
-  font-size: 24px;
-}

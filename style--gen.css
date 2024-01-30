@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--color-dark);
+}
+
+:root {
+    --color-blue: #1B5083;
+    --color-dark: #0C171C;
+}
+
+  /* gen */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  margin-top: 32px;
+}
+
+.container {
+  padding: 8rem 0;
+}
+
+.pages__container {
+  padding: 6rem 0;
+}
+
+.row {
+  padding: 0 24px;
+}
+
+#home_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav--overlay,
+
+#nav__overlay--gen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background-color: var(--color-dark);
+  opacity: 0.8;
+  transition: all 500ms ease-in-out;
+}
+
+.nav__container {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company_logo {
+  width: 75px;
+  z-index: 100;
+}
+
+.nav__list {
+  display: flex;
+  z-index: 100;
+}
+
+.nav__link {
+  margin-left: 32px;
+  color: #FFF;
+  font-weight: 200;
+}
+
+
+
+
+/* paint options */
+#paint_options {
+  width: 100%;
+  margin-top: 120px;
+  height: calc(100vh - 120px);
+  background-color: #313435;
+}
+
+.img--container {
+  width: 50%;
+  height: 600px;
+  background-image: url('./assets/paint.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.service_title--container {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  color: #FFF;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.service--title {
+  text-align: center;
+  font-size: 80px;
+}
+
+.service-type--link {
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 16px 24px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.link--wrapper {
+  display: flex;
+  gap: 32px;
+}

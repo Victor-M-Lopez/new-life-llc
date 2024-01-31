@@ -40,7 +40,7 @@ h3 {
 }
 
 .second--container {
-  padding: 20rem 0;
+  padding: 4rem 0;
 }
 
 .pages__container {
@@ -55,6 +55,20 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section--heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  color: #FFF;
+}
+
+.heading--divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-blue);
+  margin: 4px 0 32px 0;
 }
 
 #home_nav {
@@ -154,9 +168,12 @@ h3 {
 }
 
 .service__img__box--container {
-  border: 1px solid #FFF;
   display: flex;
   flex-direction: column;
+}
+
+.service__img__box--container--2 {
+  align-items: end;
 }
 
 .service__img--keypoint--container {
@@ -165,23 +182,22 @@ h3 {
   gap: 32px;
 }
 
+.service__img--keypoint--container--2 {
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
 .service--img {
-  width: 50%;
+  width: 40%;
   display: block;
 }
 
-.keypoints--container {
-  width: 30%;
-  background-color: #1B5083;
-}
-
 .service--info--container {
-  width: 100%;
-  max-width: 50%;
+  width: 40%;
   color: #FFF;
 }
 
-.service--title {
+.service--title--text {
   margin: 12px 0;
   font-size: 32px;
   text-align: justify;
@@ -190,4 +206,61 @@ h3 {
 .service--info--para {
   text-align: justify;
   margin-bottom: 32px;
+}
+
+.keypoints--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keypoints-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.keypoint-text {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #FFF;
+  font-weight: 200;
+}
+
+.keypoint-text::before {
+  content: url('./assets/check_mark.svg');
+  margin-right: 12px;
+}
+
+
+/* quality assurance */
+.quality_row {
+  color: #FFF;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quality_row p {
+  font-weight: 200;
+  line-height: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+
+.icon--wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0 8px 0;
+}
+
+.icon--quality {
+  width: 100%;
 }

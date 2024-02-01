@@ -8,10 +8,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--color-dark);
-}
-
 :root {
     --color-blue: #1B5083;
     --color-dark: #0C171C;
@@ -61,7 +57,7 @@ h3 {
   text-align: center;
   font-size: 24px;
   font-weight: 100;
-  color: #FFF;
+  color: #444;
 }
 
 .heading--divider {
@@ -116,151 +112,141 @@ h3 {
 }
 
 
-
-
-/* paint options */
-#paint_options {
-  width: 100%;
-  margin-top: 120px;
-  height: calc(100vh - 120px);
-  background-color: #143450;
-}
-
-.img--container {
-  width: 50%;
-  height: 600px;
+#paint_service {
+  position: relative;
+  height: 100vh;
   background-image: url('./assets/paint.jpeg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.service_title--container {
+.paint_service--container {
   position: absolute;
-  top: 30%;
-  right: 0;
-  color: #FFF;
-  width: 50%;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
 
+.service_name {
+  font-size: 82px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.link__container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  font-size: 24px;
+  padding: 8px 24px;
+}
+
+.service_type--link {
+  border: 1px solid #333;
+  padding: 8px 24px;
+  color: #333;
+}
+
+
+/* residential_service */
+.service_img--wrapper {
+  width: 45%;
+}
+
+.service__container,
+.service__container--2 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-  height: 500px;
 }
 
-.service--title {
-  text-align: center;
-  font-size: 80px;
-}
-
-.service-type--link {
-  color: #FFF;
-  border: 1px solid #FFF;
-  padding: 16px 24px;
-  font-weight: 200;
-  font-size: 20px;
-}
-
-.link--wrapper {
-  display: flex;
-  gap: 32px;
-}
-
-.service__img__box--container {
-  display: flex;
-  flex-direction: column;
-}
-
-.service__img__box--container--2 {
-  align-items: end;
-}
-
-.service__img--keypoint--container {
-  display: flex;
-  justify-content: start;
-  gap: 32px;
-}
-
-.service__img--keypoint--container--2 {
+.service__container--2 {
   flex-direction: row-reverse;
-  justify-content: end;
 }
 
 .service--img {
-  width: 40%;
-  display: block;
+  width: 100%;
 }
 
-.service--info--container {
-  width: 40%;
-  color: #FFF;
+.keypoints__container {
+  width: 50%;
+  color: #333;
 }
 
-.service--title--text {
-  margin: 12px 0;
+.service--type {
   font-size: 32px;
-  text-align: justify;
-}
-
-.service--info--para {
-  text-align: justify;
   margin-bottom: 32px;
 }
 
-.keypoints--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.service--info--text {
+  margin-bottom: 24px;
+  text-align: justify;
 }
 
-.keypoints-list {
+.keypoint_list {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.keypoint-text {
-  font-size: 20px;
-  margin: 8px 0;
+.keypoint {
+  text-align: center;
+  width: calc(100% / 5.1);
+  margin-bottom: 16px;
+  border: 1px solid var(--color-blue);
+  transition: color 300ms ease;
+  transition: background-color 300ms ease;
+  font-size: 14.5px;
+}
+
+.keypoint:hover {
+  background-color: var(--color-blue);
   color: #FFF;
-  font-weight: 200;
+  cursor: default;
 }
 
-.keypoint-text::before {
-  content: url('./assets/check_mark.svg');
-  margin-right: 12px;
+#commercial {
+  background-color: #eee;
 }
+
 
 
 /* quality assurance */
-.quality_row {
-  color: #FFF;
-  padding: 32px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.quality_row p {
+.page--heading {
   font-weight: 200;
-  line-height: 2rem;
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 24px;
+  font-size: 24px;
 }
 
+.quality_assurance--text {
+  font-weight: 200;
+  color: #444;
+  text-align: center;
+  max-width: 800px;
+}
 
-.icon--wrapper {
-  width: 100px;
-  height: 100px;
+.icon__wrapper {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+}
+
+.icon-box {
+  position: relative;
+  border: 1px solid #d0d0d0;
+  width: 300px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 24px 0 8px 0;
+  border-radius: 16px;
 }
 
-.icon--quality {
-  width: 100%;
+.icon--text {
+  position: absolute;
+  bottom: 0;
+  font-weight: 200;
 }
+

@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -174,10 +175,6 @@ h3 {
 
 
 /* services */
-.services_container {
-  padding: 6rem 0;
-}
-
 .services--container {
   width: 100%;
   padding: 24px;

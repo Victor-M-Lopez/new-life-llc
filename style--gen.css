@@ -113,7 +113,9 @@ h3 {
 
 
 #paint_service,
-#repair_service {
+#repair_service,
+#maintenance_service,
+#renovations_service {
   position: relative;
   height: 100vh;
   background-position: center;
@@ -129,11 +131,20 @@ h3 {
   background-image: url(./assets/repairs.jpeg);
 }
 
-.paint_service--container {
+#maintenance_service {
+  background-image: url('./assets/maintenance.jpeg');
+}
+
+#renovations_service {
+  background-image: url('./assets/remodeling.jpeg');
+}
+
+.paint_service--container,
+.paint_service--container--2 {
   position: absolute;
   top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .service_name {
@@ -154,6 +165,12 @@ h3 {
   border: 1px solid #333;
   padding: 8px 24px;
   color: #333;
+}
+
+.paint_service--container--2 .service_name,
+.paint_service--container--2 .service_type--link {
+  color: #FFF;
+  border-color: #FFF;
 }
 
 
@@ -199,7 +216,8 @@ h3 {
 }
 
 .keypoint,
-.keypoint--2 {
+.keypoint--2,
+.keypoint--3 {
   text-align: center;
   width: calc(100% / 5.1);
   margin-bottom: 16px;
@@ -213,8 +231,13 @@ h3 {
   width: calc(100% / 4.1);
 }
 
+.keypoint--3 {
+  width: calc(100% / 3.1);
+}
+
 .keypoint:hover,
-.keypoint--2:hover {
+.keypoint--2:hover,
+.keypoint--3:hover {
   background-color: var(--color-blue);
   color: #FFF;
   cursor: default;

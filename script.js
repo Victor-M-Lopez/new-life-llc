@@ -37,3 +37,19 @@ function navScroll() {
     document.getElementById('nav__overlay').className = "";
   }
 }
+
+function openMenu() {
+  document.body.classList += " menu--open" 
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
+
+function openService() {
+  document.body.classList += " open--slide"
+}
+
+function closeService() {
+  document.body.classList.remove("open--slide");
+}

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section id="home-landing_page">
@@ -21,6 +22,35 @@
           <li><a href="#services" class="nav__link">SERVICES</a></li>
           <li><a href="#projects" class="nav__link">PROJECTS</a></li>
         </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars hamburger__menu"></i>
+        </button>
+
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times x__btn"></i>
+          </button>
+  
+          <ul>
+            <li class="menu__list">
+              <a href="./index.html" class="menu__link" onclick="closeMenu()">HOME</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="#about" class="menu__link" onclick="closeMenu()">ABOUT US</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="#services" class="menu__link" onclick="closeMenu()">SERVICES</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="#customer_review" class="menu__link" onclick="closeMenu()">PROJECTS</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
 
@@ -142,30 +172,28 @@
         <div class="dark--overlay"></div>
 
         <h2 class="section--heading choose-us--heading">Why Choose Us?</h2>
-        <div class="heading--divider choose-us--divider"></div>
-
 
         <div class="icons--container">
           <div class="icon--box">
-            <img src="./assets/Group 3.svg" alt="" class="icon">
+            <img src="./assets/Group 3.svg" alt="" class="icon--1">
 
             <p class="keypoint">Quality Workmanship</p>
           </div>
 
           <div class="icon--box">
-            <img src="./assets/clock.svg" alt="" class="icon">
+            <img src="./assets/clock.svg" alt="" class="icon--2">
 
             <p class="keypoint">Experience and Expertise</p>
           </div>
 
           <div class="icon--box">
-            <img src="./assets/coins.svg" alt="" class="icon">
+            <img src="./assets/coins.svg" alt="" class="icon--3">
 
             <p class="keypoint">Fair Pricing</p>
           </div>
 
           <div class="icon--box">
-            <img src="./assets/phone.svg" alt="" class="icon">
+            <img src="./assets/phone.svg" alt="" class="icon--4">
 
             <p class="keypoint">Accessibility</p>
           </div>
@@ -273,6 +301,11 @@
     <div class="container">
       <div class="row">
         <div class="footer__content--container">
+
+          <figure class="img--wrapper">
+            <img src="./assets/newlifelogo.svg" alt="" class="footer__logo">
+          </figure>
+
           <ul class="footer__content--list">
             <li><a href="./paint.html" class="footer_links">Painting Services</a></li>
             <li><a href="./repairs.html" class="footer_links">Repair Services</a></li>
@@ -280,9 +313,6 @@
             <li><a href="./renovations.html" class="footer_links">Remodeling Services</a></li>
           </ul>
 
-          <figure class="img--wrapper">
-            <img src="./assets/newlifelogo.svg" alt="" class="footer__logo">
-          </figure>
 
           <ul class="footer__content--list">
             <li><a href="tel:240-510-6587" class="footer_links">240.510.6587</a></li>

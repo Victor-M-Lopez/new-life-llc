@@ -416,39 +416,69 @@ h3 {
   transform: rotate(180deg);
 }
 
+.contact--container {
+  background-color: var(--color-blue);
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+}
+
 
 
 
 /* footer */
 footer {
+  position: relative;
+  background-image: url('./assets/AdobeStock_403345754.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
   background-color: var(--color-dark);
+  opacity: 0.8;
+}
+
+.img--wrapper {
+  width: 15%;
 }
 
 .footer__logo {
-  width: 300px;
+  width: 100%;
 }
 
-.directory_list {
-  color: #1B5083;
-  font-weight: 200;
-}
-
-.footer_link,
-.footer_list--li {
-  color: #FFF;
-  font-weight: 100;
-  margin: 4px 0;
-}
-
-.directory {
+.footer__content--container {
+  position: absolute;
+  color: #eee;
+  inset: 0;
   display: flex;
-  margin-top: 40px;
-  gap: 80px;
-  align-items: start;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.contact--info {
-  margin: 24px 0;
+.footer__content--list li {
+  margin-bottom: 24px;
+}
+
+.footer_links {
+  color: #FFF;
+  transition: opacity 300ms ease;
+}
+
+.footer_links:hover {
+  opacity: 0.6;
+}
+
+.author__container {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
 }
 
 .copyright,
@@ -456,6 +486,6 @@ footer {
   text-align: end;
   color: #FFF;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 12px;
   padding: 2px 8px;
 }

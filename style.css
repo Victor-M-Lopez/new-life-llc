@@ -109,6 +109,11 @@ h3 {
   margin-left: 32px;
   color: #FFF;
   font-weight: 200;
+  transition: opacity 300ms ease;
+}
+
+.nav__link:hover {
+  opacity: 0.6;
 }
 
 .home-landing--container {
@@ -490,6 +495,9 @@ footer {
   font-size: 12px;
   padding: 2px 8px;
 }
+
+
+
 
 
 /* hamburger menu */

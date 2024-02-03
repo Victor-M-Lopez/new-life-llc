@@ -96,6 +96,10 @@ h3 {
   z-index: 100;
 }
 
+.logo_link {
+  z-index: 100;
+}
+
 .nav__list {
   display: flex;
   z-index: 100;

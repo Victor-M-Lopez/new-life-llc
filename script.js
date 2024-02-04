@@ -1,3 +1,4 @@
+window.onscroll = function() {navScroll()};
 const buttons = document.querySelectorAll('[data-carousel--btn]')
 
 
@@ -26,7 +27,6 @@ buttons.forEach(button => {
 })
 
 
-window.onscroll = function() {navScroll()};
 
 
 function navScroll() {

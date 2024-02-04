@@ -27,14 +27,17 @@ buttons.forEach(button => {
 })
 
 
-
+let companyLogo = document.querySelector('.company_logo');
+let overlay = document.getElementById('nav__overlay'); 
 
 function navScroll() {
   if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
-    document.getElementById('nav__overlay').className = 'nav--overlay';
+    overlay.style.opacity = '0.8'
+    companyLogo.style.opacity = '1';
   }
   else {
-    document.getElementById('nav__overlay').className = "";
+    overlay.style.opacity = '0'
+    companyLogo.style.opacity = '0';
   }
 }
 

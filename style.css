@@ -63,7 +63,7 @@ h3 {
   z-index: 100;
 }
 
-.nav--overlay,
+#nav__overlay,
 #nav__overlay--gen {
   position: absolute;
   top: 0;
@@ -71,9 +71,18 @@ h3 {
   right: 0;
   height: 120px;
   background-color: var(--color-dark);
-  opacity: 0.8;
   transition: all 500ms ease-in-out;
 }
+
+#nav__overlay {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+#nav__overlay--gen {
+  opacity: 0.8;
+}
+
 
 .nav__container {
   padding: 24px;
@@ -102,6 +111,8 @@ h3 {
 .company_logo {
   width: 75px;
   z-index: 100;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .logo_link {

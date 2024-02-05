@@ -368,6 +368,20 @@ h3 {
 }
 
 
+@media (max-width: 600px) {
+  #paint_service,
+  #maintenance_service,
+  #renovations_service,
+  #repair_service {
+    background-attachment: scroll;
+  }
+
+  .service_name {
+    font-size: 50px;
+  }
+}
+
+
 @media (max-width: 530px) {
   .service_name,
   .paint_service--container--2 .service_name {

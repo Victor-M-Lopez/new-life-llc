@@ -252,7 +252,7 @@ h3 {
 /* why us */
 #why-choose-us {
   position: relative;
-  background-image: url('./assets/AdobeStock_403345754.jpeg');
+  background-image: url('./assets/about_us--img.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -433,7 +433,7 @@ h3 {
 /* footer */
 footer {
   position: relative;
-  background-image: url('./assets/AdobeStock_403345754.jpeg');
+  background-image: url('./assets/about_us--img.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -721,6 +721,14 @@ footer {
 
   .section--heading {
     font-size: 18px;
+  }
+
+  #why-choose-us {
+    background-attachment: scroll;
+  }
+
+  footer {
+    background-attachment: scroll;
   }
 }
 

@@ -100,6 +100,10 @@ h3 {
   z-index: 100;
 }
 
+.gen-nav_logo {
+  width: 55px;
+}
+
 .nav__list {
   display: flex;
   z-index: 100;

@@ -104,7 +104,7 @@ h3 {
   position: absolute;
   top: 25%;
   left: 50%;
-  width: 300px;
+  width: 800px;
   transform: translateX(-50%);
 }
 
@@ -133,28 +133,6 @@ h3 {
 
 .nav__link:hover {
   opacity: 0.6;
-}
-
-.title {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.home_sub-heading {
-  position: absolute;
-  color: #FFF;
-  top: 70%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 40px;
-
 }
 
 .home_buttons--container {
@@ -685,15 +663,11 @@ footer {
 }
 
 @media (max-width: 850px) {
-  .title {
-    font-size: 40px;
+  .home--logo {
+    top: 30%;
+    width: 550px;
   }
-
-  .home_sub-heading {
-    top: 67%;
-    font-size: 32px
-  }
-
+  
   .author__container {
     left: 0;
     right: 0;
@@ -713,16 +687,9 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .title {
-    top: 65%;
-    padding: 0 24px;
-    font-size: 24px;
-  }
-  
-  .home_sub-heading {
-    top: 70%;
-    font-size: 20px;
-    padding: 0 18px;
+  .home--logo {
+    top: 40%;
+    width: 400px;
   }
 
   .our-story {
@@ -741,8 +708,10 @@ footer {
   .section--heading {
     font-size: 18px;
   }
+}
 
+@media (max-width: 420px) {
   .home--logo {
-    width: 250px;
+    width: 350px;
   }
 }

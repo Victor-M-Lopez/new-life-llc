@@ -689,6 +689,15 @@ footer {
     object-fit: cover;
     object-position: center;
   }
+
+  .company_logo {
+    width: 50px;
+  }
+
+  #nav__overlay,
+  #nav__overlay--gen {
+    height: 90px;
+  }
 }
 
 @media (max-width: 575px) {

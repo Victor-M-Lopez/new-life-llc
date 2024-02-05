@@ -124,19 +124,19 @@ h3 {
 }
 
 #paint_service {
-  background-image: url('./assets/paint.jpeg');
+  background-image: url('./assets/paint.webp');
 }
 
 #repair_service {
-  background-image: url(./assets/repairs.jpeg);
+  background-image: url('./assets/repairs.webp');
 }
 
 #maintenance_service {
-  background-image: url('./assets/maintenance.jpeg');
+  background-image: url('./assets/maintenance.webp');
 }
 
 #renovations_service {
-  background-image: url('./assets/remodeling.jpeg');
+  background-image: url('./assets/remodeling.webp');
 }
 
 .paint_service--container,

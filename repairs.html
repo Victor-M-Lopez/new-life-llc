@@ -21,6 +21,7 @@
         <li><a href="./index.html#about" class="nav__link">ABOUT</a></li>
         <li><a href="./index.html#services" class="nav__link">SERVICES</a></li>
         <li><a href="./index.html#projects" class="nav__link">PROJECTS</a></li>
+        <li><a href="#contact" class="nav__link contact_link">CONTACT</a></li>
       </ul>
 
       <button class="btn__menu" onclick="openMenu()">
@@ -47,6 +48,10 @@
 
           <li class="menu__list">
             <a href="index.html#projects" class="menu__link" onclick="closeMenu()">PROJECTS</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="#contact" class="menu__link" onclick="closeMenu()">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -201,8 +206,13 @@
     </div>
   </section>
 
-  <div class="contact--container">
+  <div class="contact--container" id="contact">
     <p>For a free estimate give us a call or send us an email!</p>
+
+    <div class="contact__icon--container">
+      <a href=""><i class="fa-solid fa-phone contact_icon phone_icon"></i></a>  
+      <a href=""><i class="fa-regular fa-envelope contact_icon mail_icon"></i></a>
+    </div>
   </div>
 
   <footer>

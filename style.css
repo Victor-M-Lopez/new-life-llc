@@ -618,6 +618,11 @@ footer {
   margin-top: 24px;
 }
 
+.insure {
+  color: #FFF;
+  margin-bottom: 12px;
+}
+
 
 @media (max-width: 1130px) {
   .btn__menu {
@@ -717,6 +722,7 @@ footer {
   }
   
   .author__container {
+    bottom: 0;
     left: 0;
     right: 0;
   }

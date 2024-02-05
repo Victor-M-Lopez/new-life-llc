@@ -102,7 +102,7 @@ h3 {
 
 .home--logo {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   width: 300px;
   transform: translateX(-50%);
@@ -136,16 +136,25 @@ h3 {
 }
 
 .title {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  color: #FFF;
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 600;
 }
 
 .home_sub-heading {
+  position: absolute;
+  color: #FFF;
+  top: 70%;
+  left: 0;
+  right: 0;
   text-align: center;
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 32px;
+  font-size: 40px;
+
 }
 
 .home_buttons--container {
@@ -590,14 +599,6 @@ footer {
 
 
 @media (max-width: 1130px) {
-  .title {
-    font-size: 60px;
-  }
-
-  .home_sub-heading {
-    font-size: 20px;
-  }
-
   .btn__menu {
     display: block;
   }
@@ -689,7 +690,8 @@ footer {
   }
 
   .home_sub-heading {
-    font-size: 16px
+    top: 67%;
+    font-size: 32px
   }
 
   .author__container {
@@ -712,13 +714,15 @@ footer {
 
 @media (max-width: 575px) {
   .title {
+    top: 65%;
     padding: 0 24px;
-    font-size: 20px;
+    font-size: 24px;
   }
   
   .home_sub-heading {
-    font-size: 10px;
-    padding: 0 24px;
+    top: 70%;
+    font-size: 20px;
+    padding: 0 18px;
   }
 
   .our-story {
@@ -739,6 +743,6 @@ footer {
   }
 
   .home--logo {
-    width: 300px;
+    width: 250px;
   }
 }

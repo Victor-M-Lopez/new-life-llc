@@ -108,9 +108,16 @@ h3 {
   transform: translateX(-50%);
 }
 
+.logo_wrapper {
+  z-index: 100;
+  display: flex;
+  color: #FFF;
+  align-items: center;
+  gap: 24px;
+}
+
 .company_logo {
   width: 75px;
-  z-index: 100;
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -132,15 +139,6 @@ h3 {
   transition: opacity 300ms ease;
 }
 
-.nav__link:hover {
-  opacity: 0.6;
-}
-
-.contact_link {
-  border: 1px solid #FFF;
-  padding: 4px 16px;
-}
-
 .home_buttons--container {
   display: flex;
   justify-content: center;
@@ -156,19 +154,17 @@ h3 {
   border-radius: 100px;
 }
 
-.contact__link {
-  border: 1px solid #ccc;
+.contact_link {
   padding: 8px 16px;
   margin-left: 32px;
   color: #FFF;
-  background-color: transparent;
-  transition: background-color 300ms ease;
+  background-color: var(--color-blue);
   font-weight: 200;
   font-size: 16px;
+  transition: background-color 300ms ease;
 }
 
-.contact__link:hover {
-  background-color: var(--color-blue); 
+.contact_link:hover {
   cursor: pointer;
 }
 

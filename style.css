@@ -12,6 +12,7 @@
 :root {
 	--blue-color: #1b5083;
 	--light_blue-color: rgba(27, 80, 141, 0.4);
+	--black-color: #333333;
 }
 
 li {
@@ -209,18 +210,31 @@ nav {
 	right: 32px;
 }
 
-.service_box {
-	width: 300px;
-	overflow: hidden;
+/* service */
+#services {
+	background-color: var(--black-color);
 }
 
 .service--container {
-	/* border: 1px solid red; */
-	width: 100%;
+	position: relative;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	gap: 25px;
+}
+
+.service_box {
+	width: 300px;
+	overflow: hidden;
+	z-index: 50;
 }
 
 .service_img {
 	width: 300px;
+	height: 200px;
 	display: block;
 }
 
@@ -228,7 +242,7 @@ nav {
 	position: relative;
 	width: 300px;
 	background-color: var(--blue-color);
-	height: 250px;
+	height: 200px;
 	color: #fff;
 	padding: 8px;
 }
@@ -246,4 +260,24 @@ nav {
 	position: absolute;
 	bottom: 8px;
 	right: 8px;
+}
+
+.dots {
+	position: absolute;
+	width: 100px;
+	top: -24px;
+	left: -30px;
+	z-index: 1;
+}
+
+.lighter_dot {
+	position: absolute;
+	bottom: -24px;
+	z-index: 1;
+	width: 100px;
+	right: -40px;
+}
+
+.services_header {
+	color: #fff;
 }

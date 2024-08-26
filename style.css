@@ -30,13 +30,28 @@ button:hover {
 p,
 a,
 li {
-	font-size: 200;
+	font-weight: 200;
 	font-size: 16px;
+}
+
+strong {
+	font-weight: 400;
+}
+
+.container {
+	padding: 6rem 0;
+}
+
+.row,
+.service_row {
+	padding: 0 32px;
+	width: 100%;
 }
 
 /* landing page */
 #home {
 	position: relative;
+	z-index: 50;
 }
 
 nav {
@@ -161,4 +176,74 @@ nav {
 	100% {
 		transform: translateY(24px);
 	}
+}
+
+/* about us */
+#about {
+	position: relative;
+}
+
+.service_row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_header {
+	margin-bottom: 8px;
+}
+
+.about_us--container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+#map {
+	position: absolute;
+	top: -3px;
+	z-index: 1;
+	width: 500px;
+	right: 32px;
+}
+
+.service_box {
+	width: 300px;
+	overflow: hidden;
+}
+
+.service--container {
+	/* border: 1px solid red; */
+	width: 100%;
+}
+
+.service_img {
+	width: 300px;
+	display: block;
+}
+
+.service_info--container {
+	position: relative;
+	width: 300px;
+	background-color: var(--blue-color);
+	height: 250px;
+	color: #fff;
+	padding: 8px;
+}
+
+.service_name {
+	margin-bottom: 32px;
+}
+
+.service_info {
+	width: 260px;
+}
+
+.service_icon {
+	width: 30px;
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
 }

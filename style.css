@@ -13,6 +13,7 @@
 	--blue-color: #1b5083;
 	--light_blue-color: rgba(27, 80, 141, 0.4);
 	--black-color: #333333;
+	--gray-color: #f0f0f0;
 }
 
 li {
@@ -40,7 +41,7 @@ strong {
 }
 
 .container {
-	padding: 6rem 0;
+	padding: 8rem 0;
 }
 
 .row,
@@ -206,7 +207,7 @@ nav {
 	position: absolute;
 	top: -3px;
 	z-index: 1;
-	width: 500px;
+	width: 450px;
 	right: 32px;
 }
 
@@ -249,6 +250,7 @@ nav {
 
 .service_name {
 	margin-bottom: 32px;
+	font-size: 18px;
 }
 
 .service_info {
@@ -280,4 +282,63 @@ nav {
 
 .services_header {
 	color: #fff;
+}
+
+/* choose us */
+#choose_us {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+#background_image {
+	background-image: url('./assets/AdobeStock_101565173.jpeg');
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 300px;
+	filter: brightness(0.6);
+}
+
+.choose_us--text {
+	position: absolute;
+	color: #fff;
+	top: 24px;
+	left: 24px;
+	width: 800px;
+}
+
+.keypoints--container {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: flex;
+}
+
+.keypoint-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: calc(100% / 4);
+	gap: 12px;
+}
+
+.icon_wrapper {
+	border: 0.5px solid #fff;
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.keypoint_icon {
+	width: 40px;
+}
+
+.keypoint_text {
+	color: #fff;
+	text-align: center;
 }

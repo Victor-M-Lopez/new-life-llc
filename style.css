@@ -504,7 +504,7 @@ footer {
 	position: absolute;
 	right: 16px;
 	bottom: 16px;
-	height: 350px;
+	height: 450px;
 	text-align: start;
 	background-color: rgba(255, 255, 255, 0.8);
 
@@ -553,6 +553,7 @@ footer {
 .content--container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	gap: 32px;
 }
 
@@ -600,4 +601,13 @@ footer {
 
 .keypoint--3 {
 	width: calc(100% / 3.1);
+}
+
+/* maintenance */
+.maintenance_img {
+	background-image: url('./assets/maintenance.webp');
+}
+
+#quality_assurance {
+	width: 75%;
 }

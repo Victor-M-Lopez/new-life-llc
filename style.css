@@ -51,6 +51,13 @@ strong {
 	margin: 0 auto;
 }
 
+.nav_links {
+	color: #fff;
+}
+
+.nav_links--black {
+	color: #000;
+}
 /* landing page */
 #home {
 	position: relative;
@@ -89,14 +96,11 @@ nav.solid {
 	gap: 32px;
 }
 
-.nav_link a {
-	color: #fff;
-}
-
 #nav_contact--btn {
 	border: none;
 	background-color: var(--blue-color);
 	padding: 4px 16px;
+	color: #fff;
 }
 
 #home,
@@ -480,7 +484,7 @@ footer {
 	position: relative;
 }
 
-.paint_nav_link a {
+.paint_nav_link {
 	color: #000;
 }
 
@@ -497,7 +501,7 @@ footer {
 	position: absolute;
 	right: 16px;
 	bottom: 16px;
-	height: 500px;
+	height: 350px;
 	text-align: start;
 	background-color: rgba(255, 255, 255, 0.8);
 

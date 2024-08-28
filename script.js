@@ -1,4 +1,5 @@
 let currentIndex = 0;
+let navLogo = document.querySelector('#nav_logo');
 
 function showSlide(index) {
 	const images = document.querySelectorAll('.carousel-images img');
@@ -27,13 +28,11 @@ function prevSlide() {
 	showSlide(currentIndex - 1);
 }
 
-// Initialize the carousel by showing the first slide
 showSlide(currentIndex);
+// Initialize the carousel by showing the first slide
 
-let navLogo = document.querySelector('#nav_logo');
-
+const navBar = document.querySelector('nav');
 window.addEventListener('scroll', function () {
-	const navBar = document.querySelector('nav');
 	if (window.scrollY > 100) {
 		navBar.classList.add('solid');
 		navLogo.style.visibility = 'visible';

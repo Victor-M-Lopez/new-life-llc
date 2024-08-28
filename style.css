@@ -488,8 +488,11 @@ footer {
 	color: #000;
 }
 
-.service_background_image {
+.paint_img {
 	background-image: url('./assets/paint.webp');
+}
+
+.service_background_image {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
@@ -559,17 +562,9 @@ footer {
 	flex-wrap: wrap;
 }
 
-.keypoint {
-	text-align: center;
-	width: calc(100% / 5.1);
-	margin-bottom: 16px;
-	border: 1px solid var(--blue-color);
-	transition: color 300ms ease;
-	transition: background-color 300ms ease;
-	font-size: 14.5px;
-}
-
-.keypoint:hover {
+.keypoint:hover,
+.keypoint--2:hover,
+.keypoint--3:hover {
 	background-color: var(--blue-color);
 	color: #fff;
 	cursor: default;
@@ -581,4 +576,28 @@ footer {
 
 .commercial--container {
 	flex-direction: row-reverse;
+}
+
+.repair_img {
+	background-image: url('./assets/repairs.webp');
+}
+
+.keypoint,
+.keypoint--2,
+.keypoint--3 {
+	text-align: center;
+	width: calc(100% / 5.1);
+	margin-bottom: 16px;
+	border: 1px solid var(--blue-color);
+	transition: color 300ms ease;
+	transition: background-color 300ms ease;
+	font-size: 14.5px;
+}
+
+.keypoint--2 {
+	width: calc(100% / 4.1);
+}
+
+.keypoint--3 {
+	width: calc(100% / 3.1);
 }

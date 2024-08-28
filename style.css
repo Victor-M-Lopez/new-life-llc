@@ -44,10 +44,11 @@ strong {
 	padding: 8rem 0;
 }
 
-.row,
-.service_row {
+.row {
 	padding: 0 32px;
 	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 /* landing page */
@@ -340,8 +341,8 @@ nav.solid {
 
 .carousel {
 	position: relative;
-	width: 80%;
-	height: 600px;
+	width: 50%;
+	height: 500px;
 	max-width: 600px;
 	overflow: hidden;
 }
@@ -381,7 +382,7 @@ nav.solid {
 }
 
 .projects_container {
-	width: 45%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
@@ -389,8 +390,8 @@ nav.solid {
 
 .projects_row {
 	display: flex;
-	margin: 0 auto;
 	justify-content: space-between;
+	gap: 100px;
 	align-items: center;
 }
 
@@ -472,4 +473,108 @@ footer {
 
 .copyright p {
 	font-size: 12px;
+}
+
+/* paint service page */
+#painting-services {
+	position: relative;
+}
+
+.paint_nav_link a {
+	color: #000;
+}
+
+.service_background_image {
+	background-image: url('./assets/paint.webp');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.page_title-info--container {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	height: 500px;
+	text-align: start;
+	background-color: rgba(255, 255, 255, 0.8);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+	padding: 32px;
+	border-top-left-radius: 46px;
+}
+
+.page_title {
+	font-size: 56px;
+	font-weight: 600;
+	width: 100%;
+}
+
+.page_btn {
+	color: #fff;
+	background-color: var(--blue-color);
+	padding: 8px 24px;
+	margin-right: 32px;
+}
+
+.page_sub-heading {
+	width: 700px;
+}
+
+.residential_img--wrapper {
+	width: 50%;
+	overflow: hidden;
+}
+
+.residential_img {
+	width: 100%;
+	display: block;
+}
+
+.service_info--wrapper {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.content--container {
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.keypoint_list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.keypoint {
+	text-align: center;
+	width: calc(100% / 5.1);
+	margin-bottom: 16px;
+	border: 1px solid var(--blue-color);
+	transition: color 300ms ease;
+	transition: background-color 300ms ease;
+	font-size: 14.5px;
+}
+
+.keypoint:hover {
+	background-color: var(--blue-color);
+	color: #fff;
+	cursor: default;
+}
+
+#commercial_service {
+	background-color: var(--gray-color);
+}
+
+.commercial--container {
+	flex-direction: row-reverse;
 }

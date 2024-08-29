@@ -435,7 +435,7 @@ nav.solid {
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 80;
 	transition: background-color 0.3s;
 }
 
@@ -962,7 +962,7 @@ footer {
 
 	#service--btn,
 	#contact--btn {
-		font-size: 12px;
+		font-size: 14px;
 		padding: 4px 16px;
 	}
 

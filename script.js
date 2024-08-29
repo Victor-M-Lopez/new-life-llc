@@ -1,6 +1,18 @@
 let currentIndex = 0;
 let navLogo = document.querySelector('#nav_logo');
 
+const exitBtn = document.querySelector('#exit-btn');
+const navModal = document.querySelector('#nav_modal');
+let hamburgerBtn = document.querySelector('#hamburger_menu');
+
+hamburgerBtn.addEventListener('click', function () {
+	navModal.classList.add('show_modal');
+});
+
+exitBtn.addEventListener('click', function () {
+	navModal.classList.remove('show_modal');
+});
+
 function showSlide(index) {
 	const images = document.querySelectorAll('.carousel-images img');
 	const totalImages = images.length;

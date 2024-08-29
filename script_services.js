@@ -2,6 +2,10 @@ let navLogo = document.querySelector('#nav_logo');
 let navLink = document.querySelectorAll('.nav_links--black');
 const navBar = document.querySelector('nav');
 
+const exitBtn = document.querySelector('#exit-btn');
+const navModal = document.querySelector('#nav_modal');
+const hamburgerBtn = document.querySelector('#hamburger_menu');
+
 window.addEventListener('scroll', function () {
 	for (let i = 0; i < navLink.length; i++) {
 		if (window.scrollY > 100) {
@@ -14,4 +18,12 @@ window.addEventListener('scroll', function () {
 			navLink[i].style.color = '#000';
 		}
 	}
+});
+
+hamburgerBtn.addEventListener('click', function () {
+	navModal.classList.add('show_modal');
+});
+
+exitBtn.addEventListener('click', function () {
+	navModal.classList.remove('show_modal');
 });

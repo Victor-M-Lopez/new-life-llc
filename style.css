@@ -574,7 +574,7 @@ footer {
 	text-align: start;
 	background-color: rgba(255, 255, 255, 0.95);
 
-	padding: 32px;
+	padding: 24px;
 	border-top-left-radius: 46px;
 }
 
@@ -675,8 +675,8 @@ footer {
 	width: 75%;
 }
 
-/* remodeling */
-.remodeling_img {
+/* renovation */
+.renovation_img {
 	background-image: url('./assets/remodeling.webp');
 }
 
@@ -873,7 +873,7 @@ footer {
 	}
 
 	.page_title-info--container {
-		width: 90%;
+		width: 95%;
 	}
 
 	.keypoint,
@@ -889,6 +889,15 @@ footer {
 
 	#quality_assurance {
 		width: 100%;
+	}
+
+	.nav_modal--list {
+		gap: 16px;
+	}
+
+	#background_image,
+	.service_background_image {
+		background-attachment: local;
 	}
 }
 
@@ -941,7 +950,7 @@ footer {
 	.landing_page_btn--container {
 		width: 100%;
 		left: 50%;
-		bottom: 52%;
+		bottom: 48%;
 		transform: translateX(-50%);
 		flex-direction: row;
 		justify-content: center;

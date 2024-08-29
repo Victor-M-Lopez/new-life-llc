@@ -611,3 +611,8 @@ footer {
 #quality_assurance {
 	width: 75%;
 }
+
+/* remodeling */
+.remodeling_img {
+	background-image: url('./assets/remodeling.webp');
+}

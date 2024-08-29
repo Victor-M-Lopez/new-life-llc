@@ -568,11 +568,11 @@ footer {
 
 .page_title-info--container {
 	position: absolute;
-	right: 16px;
-	bottom: 16px;
-	height: 450px;
+	right: 0;
+	bottom: 0;
+	height: 460px;
 	text-align: start;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.95);
 
 	padding: 32px;
 	border-top-left-radius: 46px;

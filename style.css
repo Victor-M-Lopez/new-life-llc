@@ -183,13 +183,14 @@ nav.solid {
 
 .section_header {
 	margin-bottom: 8px;
+	text-align: center;
 }
 
 .about_us--container {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
+	gap: 16px;
 }
 
 #map {
@@ -205,13 +206,16 @@ nav.solid {
 	background-color: var(--black-color);
 }
 
+.service_header {
+	text-align: center;
+}
+
 .service--container {
 	position: relative;
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 
-	display: grid;
 	grid-template-columns: repeat(2, 300px);
 	gap: 25px;
 }
@@ -219,7 +223,7 @@ nav.solid {
 .service_box {
 	width: 300px;
 	overflow: hidden;
-	z-index: 50;
+	z-index: 80;
 	transition: scale 300ms ease;
 }
 
@@ -262,7 +266,7 @@ nav.solid {
 	position: absolute;
 	width: 100px;
 	top: -24px;
-	left: -30px;
+	left: -36px;
 	z-index: 1;
 }
 
@@ -271,7 +275,7 @@ nav.solid {
 	bottom: -24px;
 	z-index: 1;
 	width: 100px;
-	right: -40px;
+	right: -10px;
 }
 
 .services_header {
@@ -444,7 +448,7 @@ footer {
 .footer_container {
 	background-color: var(--black-color);
 	padding: 24px;
-	height: 250px;
+	height: 280px;
 	color: #fff;
 }
 
@@ -508,10 +512,6 @@ footer {
 	text-align: start;
 	background-color: rgba(255, 255, 255, 0.8);
 
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 32px;
 	padding: 32px;
 	border-top-left-radius: 46px;
 }
@@ -531,6 +531,7 @@ footer {
 
 .page_sub-heading {
 	width: 700px;
+	margin-bottom: 32px;
 }
 
 .residential_img--wrapper {
@@ -615,4 +616,273 @@ footer {
 /* remodeling */
 .remodeling_img {
 	background-image: url('./assets/remodeling.webp');
+}
+
+.quality_header {
+	text-align: start;
+}
+
+.about_header {
+	text-align: start;
+}
+
+.page_btn--container {
+	width: 100%;
+	display: flex;
+}
+
+/* 1380px */
+@media (max-width: 1380px) {
+	.service--container {
+		display: grid;
+	}
+
+	.content--container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.service_type {
+		text-align: center;
+	}
+
+	.keypoint_list {
+		justify-content: center;
+		gap: 4px;
+	}
+
+	.service_info--wrapper {
+		text-align: center;
+		width: 85%;
+	}
+
+	.keypoint,
+	.keypoint--2,
+	.keypoint--3 {
+		width: calc(100% / 3);
+	}
+
+	.residential_img--wrapper {
+		width: 600px;
+	}
+}
+
+/* 890px */
+@media (max-width: 890px) {
+	.page_title {
+		font-size: 32px;
+	}
+
+	.page_sub-heading,
+	.service_info--wrapper p {
+		font-size: 14px;
+	}
+
+	.page_sub-heading {
+		width: 100%;
+	}
+
+	#choose_us,
+	#background_image {
+		height: 500px;
+	}
+
+	.keypoints--container {
+		flex-wrap: wrap;
+		top: 40%;
+	}
+
+	.keypoint-box {
+		width: calc(100% / 2);
+		margin-bottom: 16px;
+	}
+
+	.icon_wrapper {
+		width: 60px;
+		height: 60px;
+	}
+
+	.keypoint_icon {
+		width: 30px;
+	}
+
+	.keypoint_text {
+		font-size: 14px;
+	}
+
+	.choose_us--text {
+		width: 80%;
+	}
+
+	.projects_row {
+		flex-direction: column-reverse;
+		gap: 24px;
+		text-align: center;
+	}
+
+	.carousel {
+		width: 400px;
+		height: 400px;
+	}
+
+	.projects_container {
+		width: 80%;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	.service_name {
+		font-size: 16px;
+	}
+
+	.service_icon {
+		width: 20px;
+	}
+
+	p,
+	a,
+	li {
+		font-size: 14px;
+	}
+
+	.title_container {
+		top: 48%;
+	}
+
+	#company_title {
+		font-size: 32px;
+	}
+	.company_sub--title {
+		font-size: 24px;
+	}
+
+	.page_title-info--container {
+		height: 350px;
+		width: 80%;
+	}
+}
+
+@media (max-width: 776px) {
+	.service--container {
+		grid-template-columns: repeat(1, 300px);
+	}
+
+	.carousel {
+		width: 350px;
+		height: 350px;
+	}
+
+	.projects_container {
+		width: 100%;
+	}
+
+	.about_us--container {
+		margin-top: 320px;
+		width: 80%;
+	}
+
+	#map {
+		width: 350px;
+	}
+
+	.phone_link::before,
+	.email_link::before {
+		scale: 0.8;
+	}
+
+	.page_title {
+		font-size: 24px;
+	}
+
+	.page_title-info--container {
+		width: 90%;
+	}
+
+	.keypoint,
+	.keypoint--2,
+	.keypoint--3 {
+		font-size: 12px;
+		width: 150px;
+	}
+
+	.service_info--wrapper {
+		width: 100%;
+	}
+
+	#quality_assurance {
+		width: 100%;
+	}
+}
+
+@media (max-width: 630px) {
+	.residential_img--wrapper {
+		width: 360px;
+	}
+
+	.footer_link a {
+		font-size: 12px;
+	}
+
+	.contact_wrapper p {
+		font-size: 12px;
+	}
+
+	.contact_wrapper {
+		width: 95%;
+	}
+
+	.footer_container {
+		height: 400px;
+	}
+
+	.footer_list {
+		margin-top: 124px;
+	}
+
+	.copyright p {
+		font-size: 10px;
+	}
+	p,
+	a,
+	li {
+		font-size: 12px;
+	}
+
+	.service_info--wrapper p {
+		font-size: 12px;
+	}
+
+	#company_title {
+		font-size: 20px;
+	}
+
+	.company_sub--title {
+		font-size: 16px;
+	}
+
+	.landing_page_btn--container {
+		width: 100%;
+		left: 50%;
+		bottom: 40%;
+		transform: translateX(-50%);
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#service--btn,
+	#contact--btn {
+		font-size: 12px;
+		padding: 4px 16px;
+	}
+
+	#landing_page--logo {
+		width: 150px;
+	}
+
+	.title_container {
+		top: 45%;
+	}
 }

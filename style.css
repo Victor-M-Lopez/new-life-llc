@@ -939,6 +939,10 @@ footer {
 		font-size: 14px;
 	}
 
+	.page_title-info--container {
+		height: 400px;
+	}
+
 	#company_title {
 		font-size: 20px;
 	}

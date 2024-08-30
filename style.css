@@ -239,7 +239,14 @@ nav.solid {
 
 #service--btn {
 	background-color: var(--blue-color);
+}
+
+#service--btn a {
 	color: #fff;
+}
+
+#contact--btn a {
+	color: #000;
 }
 
 /* about us */

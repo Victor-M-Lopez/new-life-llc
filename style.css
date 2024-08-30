@@ -24,6 +24,19 @@ a {
 	text-decoration: none;
 }
 
+#home,
+.nav_modal--container,
+#about,
+.service--container,
+.service_info--container,
+#choose_us,
+#projects,
+.carousel,
+footer,
+#painting-services {
+	position: relative;
+}
+
 button:hover {
 	cursor: pointer;
 	border: none;
@@ -60,7 +73,6 @@ strong {
 }
 /* landing page */
 #home {
-	position: relative;
 	z-index: 50;
 }
 
@@ -112,7 +124,6 @@ nav.solid {
 }
 
 .nav_modal--container {
-	position: relative;
 	width: 100%;
 	height: 100%;
 	padding: 16px;
@@ -232,10 +243,6 @@ nav.solid {
 }
 
 /* about us */
-#about {
-	position: relative;
-}
-
 .service_row {
 	display: flex;
 	flex-direction: column;
@@ -273,7 +280,6 @@ nav.solid {
 }
 
 .service--container {
-	position: relative;
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
@@ -300,7 +306,6 @@ nav.solid {
 }
 
 .service_info--container {
-	position: relative;
 	width: 300px;
 	background-color: var(--blue-color);
 	height: 200px;
@@ -346,7 +351,6 @@ nav.solid {
 
 /* choose us */
 #choose_us {
-	position: relative;
 	width: 100%;
 	height: 300px;
 	z-index: 80;
@@ -405,12 +409,7 @@ nav.solid {
 }
 
 /* portfolio */
-#projects {
-	position: relative;
-}
-
 .carousel {
-	position: relative;
 	width: 50%;
 	height: 500px;
 	max-width: 600px;
@@ -503,7 +502,6 @@ nav.solid {
 
 /* footer */
 footer {
-	position: relative;
 	width: 100%;
 }
 
@@ -546,10 +544,6 @@ footer {
 }
 
 /* paint service page */
-#painting-services {
-	position: relative;
-}
-
 .paint_nav_link {
 	color: #000;
 }

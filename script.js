@@ -1,5 +1,4 @@
 let currentIndex = 0;
-let navLogo = document.querySelector('#nav_logo');
 
 const exitBtn = document.querySelector('#exit-btn');
 const navModal = document.querySelector('#nav_modal');
@@ -54,9 +53,7 @@ const navBar = document.querySelector('nav');
 window.addEventListener('scroll', function () {
 	if (window.scrollY > 100) {
 		navBar.classList.add('solid');
-		navLogo.style.visibility = 'visible';
 	} else {
 		navBar.classList.remove('solid');
-		navLogo.style.visibility = 'hidden';
 	}
 });

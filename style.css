@@ -96,10 +96,15 @@ nav.solid {
 	align-items: center;
 }
 
+.nav_logo--wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #fff;
+}
+
 #nav_logo {
 	width: 65px;
-	visibility: hidden;
-	transition: visibility 100ms ease;
 }
 
 #hamburger_menu {
@@ -190,7 +195,6 @@ nav.solid {
 
 #landing_page--logo,
 #title_container,
-#scroll_down--btn,
 .landing_page_btn--container {
 	position: absolute;
 }
@@ -211,6 +215,12 @@ nav.solid {
 	text-align: center;
 	width: 100%;
 	padding: 0 32px;
+}
+
+.landing_page_btn--container,
+#landing_page--logo,
+.title_container {
+	z-index: 2;
 }
 
 #company_title {
@@ -812,7 +822,7 @@ footer {
 	}
 
 	.title_container {
-		top: 48%;
+		top: 55%;
 	}
 
 	#company_title {
@@ -969,7 +979,7 @@ footer {
 
 	#landing_page--logo {
 		width: 100px;
-		top: 28%;
+		top: 26%;
 	}
 
 	.title_container {

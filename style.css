@@ -193,72 +193,6 @@ nav.solid {
 	filter: brightness(0.6);
 }
 
-#landing_page--logo,
-#title_container,
-.landing_page_btn--container {
-	position: absolute;
-}
-
-#landing_page--logo {
-	width: 250px;
-	top: 25%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.title_container {
-	position: absolute;
-	color: #fff;
-	top: 52%;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	width: 100%;
-	padding: 0 32px;
-}
-
-.landing_page_btn--container,
-#landing_page--logo,
-.title_container {
-	z-index: 2;
-}
-
-#company_title {
-	font-size: 48px;
-	font-weight: 600;
-}
-
-.company_sub--title {
-	font-size: 32px;
-}
-
-.landing_page_btn--container {
-	bottom: 32px;
-	left: 32px;
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-}
-
-#service--btn,
-#contact--btn {
-	border: none;
-	padding: 8px 16px;
-	font-size: 16px;
-}
-
-#service--btn {
-	background-color: var(--blue-color);
-}
-
-#service--btn a {
-	color: #fff;
-}
-
-#contact--btn a {
-	color: #000;
-}
-
 /* about us */
 .service_row {
 	display: flex;
@@ -821,17 +755,6 @@ footer {
 		font-size: 14px;
 	}
 
-	.title_container {
-		top: 55%;
-	}
-
-	#company_title {
-		font-size: 32px;
-	}
-	.company_sub--title {
-		font-size: 24px;
-	}
-
 	.page_title-info--container {
 		height: 350px;
 		width: 80%;
@@ -952,38 +875,6 @@ footer {
 
 	.page_title-info--container {
 		height: 400px;
-	}
-
-	#company_title {
-		font-size: 20px;
-	}
-
-	.company_sub--title {
-		font-size: 16px;
-	}
-
-	.landing_page_btn--container {
-		width: 100%;
-		left: 50%;
-		bottom: 48%;
-		transform: translateX(-50%);
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	#service--btn,
-	#contact--btn {
-		font-size: 14px;
-		padding: 4px 16px;
-	}
-
-	#landing_page--logo {
-		width: 100px;
-		top: 26%;
-	}
-
-	.title_container {
-		top: 38%;
 	}
 
 	.nav_modal--list {

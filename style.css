@@ -1044,4 +1044,16 @@ footer {
 	#service_btn {
 		font-size: 12px;
 	}
+
+	.nav_logo--wrapper span {
+		font-size: 12px;
+	}
+
+	#nav_logo {
+		width: 35px;
+	}
+
+	.nav_container {
+		padding: 16px;
+	}
 }

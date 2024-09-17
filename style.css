@@ -566,6 +566,24 @@ nav.solid {
 	margin-right: 8px;
 }
 
+#quality_assurance {
+	width: 95%;
+	background-color: var(--blue-color);
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	padding: 24px;
+	color: #fff;
+	border-radius: 16px;
+}
+
+#quality_assurance h3 {
+	margin-bottom: 12px;
+}
+
+#quality_assurance p {
+	width: 800px;
+}
+
 /* footer */
 footer {
 	width: 100%;
@@ -729,10 +747,6 @@ footer {
 /* maintenance */
 .maintenance_img {
 	background-image: url('./assets/maintenance.webp');
-}
-
-#quality_assurance {
-	width: 75%;
 }
 
 /* renovation */
@@ -933,10 +947,6 @@ footer {
 	}
 
 	.service_info--wrapper {
-		width: 100%;
-	}
-
-	#quality_assurance {
 		width: 100%;
 	}
 

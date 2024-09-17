@@ -181,6 +181,121 @@ nav.solid {
 	color: #fff;
 }
 
+.landing_page--container {
+	position: absolute;
+	z-index: 2;
+	color: #fff;
+	top: 30%;
+	left: 32px;
+	right: 32px;
+}
+
+.home_title {
+	font-weight: 600;
+	font-size: 40px;
+	width: 100%;
+}
+
+.landing_page_service--container {
+	position: absolute;
+	bottom: 0;
+	z-index: 100;
+	height: 100px;
+	left: 0;
+	width: 100%;
+	background-color: #1b5083aa;
+	padding: 8px 0 8px 24px;
+	color: #fff;
+
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+}
+
+.landing_page-service {
+	font-size: 14px;
+	font-weight: 200;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing_page--painting::before {
+	content: '';
+	background-image: url('./assets/paint_roller.svg');
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+	vertical-align: -20%;
+}
+
+.landing_page--repairs::before {
+	content: '';
+	background-image: url('./assets/toolbox_icon.svg');
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+	vertical-align: -20%;
+}
+
+.landing_page--maintenance::before {
+	content: '';
+	background-image: url('./assets/tool_icon.svg');
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+	vertical-align: -20%;
+}
+
+.landing_page--remodeling::before {
+	content: '';
+	background-image: url('./assets/ruler_icon.svg');
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+	vertical-align: -20%;
+}
+
+.home_sub--title {
+	font-size: 20px;
+	max-width: 600px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.landing_page_btn--container {
+	display: flex;
+	gap: 24px;
+}
+
+#service_btn,
+#contact_btn {
+	padding: 4px 16px;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+}
+
+#service_btn {
+	background-color: var(--blue-color);
+}
+
+#contact_btn {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
 #home,
 #landing_page--video {
 	width: 100%;

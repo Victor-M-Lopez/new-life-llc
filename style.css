@@ -220,7 +220,7 @@ nav.solid {
 
 .landing_page--painting::before {
 	content: '';
-	background-image: url('./assets/paint_roller.svg');
+	background-image: url('./assets/paint-roller-icon.svg');
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -232,7 +232,7 @@ nav.solid {
 
 .landing_page--repairs::before {
 	content: '';
-	background-image: url('./assets/toolbox_icon.svg');
+	background-image: url('./assets/toolbox-icon.svg');
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -244,7 +244,7 @@ nav.solid {
 
 .landing_page--maintenance::before {
 	content: '';
-	background-image: url('./assets/tool_icon.svg');
+	background-image: url('./assets/wrench-tool-icon.svg');
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -256,7 +256,7 @@ nav.solid {
 
 .landing_page--remodeling::before {
 	content: '';
-	background-image: url('./assets/ruler_icon.svg');
+	background-image: url('./assets/ruler-icon.svg');
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -422,7 +422,7 @@ nav.solid {
 }
 
 #background_image {
-	background-image: url('./assets/choose_us-img.webp');
+	background-image: url('./assets/painting-project-materials.webp');
 	width: 100%;
 	background-position: center;
 	background-size: cover;

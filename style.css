@@ -58,7 +58,6 @@ h3,
 h4,
 h5,
 h6,
-p,
 span:hover {
 	cursor: default;
 }
@@ -293,4 +292,102 @@ hr {
 .about_img {
 	width: 100%;
 	display: block;
+}
+
+/* services */
+#services {
+	background-color: var(--black-color);
+}
+
+.service_heading {
+	text-align: center;
+	color: #fff;
+}
+
+.service--container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+
+	grid-template-columns: repeat(2, 300px);
+	gap: 25px;
+}
+
+.service_box {
+	position: relative;
+	width: 300px;
+	overflow: hidden;
+	z-index: 80;
+	transition: scale 300ms ease;
+}
+
+.service_box:hover {
+	scale: 0.95;
+}
+
+.service_img {
+	width: 300px;
+	height: 200px;
+	display: block;
+}
+
+.service_info--container {
+	width: 300px;
+	background-color: var(--black-color);
+	height: 200px;
+	color: #fff;
+	padding: 8px;
+	border-left: 0.5px solid #fff;
+	border-right: 0.5px solid #fff;
+	border-bottom: 0.5px solid #fff;
+}
+
+.service_name {
+	margin-bottom: 32px;
+	font-size: 18px;
+}
+
+.service_info {
+	width: 260px;
+}
+
+.service_icon {
+	width: 20px;
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.dots {
+	position: absolute;
+	width: 100px;
+	top: -24px;
+	left: -36px;
+	z-index: 1;
+}
+
+.lighter_dot {
+	position: absolute;
+	bottom: -24px;
+	z-index: 1;
+	width: 100px;
+	right: -10px;
+}
+
+.services_header {
+	color: #fff;
+}
+
+/* 1380px */
+@media (max-width: 1380px) {
+	.service--container {
+		display: grid;
+	}
+}
+
+/* 776px */
+@media (max-width: 776px) {
+	.service--container {
+		grid-template-columns: repeat(1, 300px);
+	}
 }

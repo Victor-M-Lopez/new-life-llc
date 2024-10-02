@@ -258,7 +258,8 @@ hr {
 }
 
 .about_heading-1,
-.about_heading-2 {
+.about_heading-2,
+.project_heading {
 	font-weight: 700;
 }
 
@@ -444,6 +445,71 @@ hr {
 .keypoint_text {
 	color: #fff;
 	text-align: center;
+}
+
+/* past projects */
+.carousel {
+	width: 50%;
+	height: 500px;
+	max-width: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-images {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+	width: 100%;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	z-index: 80;
+	transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
+.projects_container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.projects_row {
+	display: flex;
+	justify-content: space-between;
+	gap: 100px;
+	align-items: center;
+}
+
+.square_dots2 {
+	position: absolute;
+	width: 100px;
+	z-index: 1;
+	top: 100px;
+	left: 40%;
 }
 
 /* 1380px */

@@ -38,9 +38,35 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+	font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span:hover {
+	cursor: default;
+}
+
 :root {
 	--blue-color: #1b5083;
 	--blue-color-opac: rgba(27, 81, 131, 0.5);
+	--black-color: #333333;
 }
 
 li {
@@ -49,6 +75,17 @@ li {
 
 a {
 	text-decoration: none;
+}
+
+.container {
+	padding: 4rem 0;
+}
+
+.row {
+	padding: 0 24px;
+	margin: 0 auto;
+	max-width: 1500px;
+	width: 100%;
 }
 
 /* nav */
@@ -91,6 +128,7 @@ nav {
 	color: #fff;
 	font-size: 14px;
 }
+
 /* home */
 #home,
 video {
@@ -151,6 +189,108 @@ video {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100px;
+	padding: 24px;
 	background-color: var(--blue-color-opac);
+
+	display: flex;
+	justify-content: center;
+	gap: 80px;
+}
+
+.heroe_service-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.heroe_icon {
+	width: 16px;
+}
+
+.heroe_service-name {
+	font-size: 14px;
+	color: #fff;
+}
+
+/* about */
+.about_row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about_heading-1 {
+	text-align: center;
+}
+
+.locations_text-container {
+	display: flex;
+	justify-content: center;
+	gap: 80px;
+	margin: 56px 0;
+}
+
+.location::before {
+	content: url('/assets/location-icon.svg');
+	width: 50px;
+	height: 50px;
+	vertical-align: -2px;
+	margin-right: 4px;
+}
+
+.location_text {
+	text-align: center;
+	width: 800px;
+}
+
+.location_text::before {
+	content: url('/assets/crab-icon.svg');
+	vertical-align: -2px;
+}
+
+.location_text::after {
+	content: url('/assets/crab-icon.svg');
+	vertical-align: -2px;
+}
+
+hr {
+	width: 100%;
+	margin: 4rem 0;
+}
+
+.about_heading-1,
+.about_heading-2 {
+	font-weight: 700;
+}
+
+.about_heading-2 {
+	text-align: start;
+	align-self: flex-start;
+	margin-bottom: 24px;
+}
+
+.about-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text_container {
+	width: 45%;
+}
+
+.about_text {
+	margin-bottom: 12px;
+}
+
+.about_img-wrapper {
+	width: 50%;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	overflow: hidden;
+}
+
+.about_img {
+	width: 100%;
+	display: block;
 }

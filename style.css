@@ -259,7 +259,8 @@ hr {
 
 .about_heading-1,
 .about_heading-2,
-.project_heading {
+.project_heading,
+.footer_heading {
 	font-weight: 700;
 }
 
@@ -510,6 +511,78 @@ hr {
 	z-index: 1;
 	top: 100px;
 	left: 40%;
+}
+
+/* quality assurance  */
+.quality_row {
+	background-color: var(--blue-color);
+	padding: 24px;
+	width: 90%;
+	color: #fff;
+	border-radius: 12px;
+}
+
+.quality_row h4 {
+	margin-bottom: 12px;
+}
+
+.quality_row p {
+	width: 80%;
+}
+
+/* footer */
+footer {
+	background-color: var(--black-color);
+	position: relative;
+}
+
+.footer_heading,
+.email,
+.phone {
+	color: #fff;
+	width: fit-content;
+}
+
+.footer_heading {
+	margin-bottom: 24px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	color: #fff;
+}
+
+.phone::before {
+	content: url('/assets/phone-icon.svg');
+	vertical-align: -5px;
+	margin-right: 8px;
+}
+
+.email::before {
+	content: url('/assets/email-icon.svg');
+	vertical-align: -3px;
+	margin-right: 8px;
+}
+
+.footer_list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.footer_link {
+	color: #fff;
+}
+
+.copyright {
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	bottom: 12px;
+	right: 12px;
+	text-align: end;
 }
 
 /* 1380px */

@@ -5,36 +5,113 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Top-quality residential and commercial painting services from New Life Painting. Our expert painters in Frederick county, Montgomery county, Washington DC, and Baltimore Maryland use premium paints for flawless, long-lasting finish. Transform your space with our reliable and professional painting solutions."
+			content="Discover expert repair services by New Life Painting Services LLC in Frederick county, Montgomery county, Washington DC, and Baltimore. From drywall repairs to exterior restorations, we ensure top-quality craftsmanship for residential and commercial properties."
 		/>
-		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-		<link
-			rel="preload"
-			href="/fonts/poppins-v21-latin-700.woff2"
-			as="fonts"
-			type="font/woff2"
-			crossorigin
-		/>
+		<title>New Life Painting | Comprehensive Repairs</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="/script.js" defer></script>
-		<title>New Life Painting | Painting Services</title>
+		<script src="./script_services.js" defer></script>
 	</head>
 	<body>
-		<section id="service_home" class="paint_img">
-			<div class="service_overlay"></div>
-			<div class="body_text-container">
-				<h1 id="home_title">Quality Painting services</h1>
-				<h2 id="home_sub-title">
-					Bringing new life to your home with expert painting services that
-					ensure flawless finishes and vibrant results.
-				</h2>
+		<nav>
+			<div class="nav_container">
+				<img
+					src="./assets/new_life_logo.svg"
+					alt="new life painting services logo"
+					id="nav_logo"
+					loading="lazy"
+				/>
+
+				<ul class="nav_list">
+					<li class="nav_link">
+						<a href="/#home" class="nav_links--black">HOME</a>
+					</li>
+					<li class="nav_link">
+						<a href="/#about" class="nav_links--black">ABOUT</a>
+					</li>
+					<li class="nav_link">
+						<a href="/#services" class="nav_links--black"
+							>SERVICES</a
+						>
+					</li>
+					<li class="nav_link">
+						<a href="/#projects" class="nav_links--black"
+							>PROJECTS</a
+						>
+					</li>
+
+					<a href="#contact" id="nav_contact--btn">CONTACT</a>
+				</ul>
+
+				<button id="hamburger_menu">
+					<img src="./assets/hamburger_menu.svg" alt="hamburger menu for nav" />
+				</button>
 			</div>
-			<div class="service_icon-container">
-				<div class="heroe_service-box">
-					<p class="service_text">
-						Is your property in need of a new fresh coat of paint?
-					</p>
-					<a href="#" class="contact_btn">Get a free estimate now</a>
+		</nav>
+
+		<div id="nav_modal">
+			<div class="nav_modal--container">
+				<button id="exit-btn">
+					<img src="./assets/exit_btn.svg" alt="exit buttom for modal" />
+				</button>
+
+				<ul class="nav_modal--list">
+					<li><a href="/#home" class="nav_modal--list">HOME</a></li>
+					<li>
+						<a href="/#about" class="nav_modal--list">ABOUT</a>
+					</li>
+					<li>
+						<a href="/#services" class="nav_modal--list">SERVICES</a>
+					</li>
+					<li>
+						<a href="/#projects" class="nav_modal--list">PROJECTS</a>
+					</li>
+					<li><a href="#contact" class="nav_modal--list">CONTACT</a></li>
+					<div class="line"></div>
+					<li>
+						<a href="./quality-painting-services" class="nav_modal--list"
+							>QUALITY PAINTING SERVICES</a
+						>
+					</li>
+					<li>
+						<a
+							href="./comprehensive-repair-services"
+							class="nav_modal--list"
+							>COMPREHENSIVE REPAIR SERVICES</a
+						>
+					</li>
+					<li>
+						<a
+							href="./reliable-maintenance-services"
+							class="nav_modal--list"
+							>RELIABLE MAINTENANCE SERVICES</a
+						>
+					</li>
+					<li>
+						<a href="./expert-renovation-services" class="nav_modal--list"
+							>EXPERT REMODELING SERVICES</a
+						>
+					</li>
+				</ul>
+
+				<div id="license_number">MHIC-158860</div>
+			</div>
+		</div>
+
+		<section id="painting-services">
+			<div class="service_background_image repair_img"></div>
+
+			<div class="page_title-info--container">
+				<h1 class="page_title">COMPREHENSIVE REPAIR SERVICES</h1>
+				<p class="page_sub-heading">
+					Our skilled professionals are equipped to handle a wide range of
+					repairs, from drywall patching and carpentry fixes to exterior siding,
+					stucco restoration, and much more. Rely on us for all your repair
+					needs to keep your home or business in top condition.
+				</p>
+				<div class="page_btn--container">
+					<a href="#residential_services" class="page_btn">residential</a>
+					<a href="#commercial_services" class="page_btn">commmercial</a>
 				</div>
 			</div>
 		</section>
@@ -45,39 +122,40 @@
 					<div class="content--container">
 						<figure class="residential_img--wrapper">
 							<img
-								src="./assets/residential-finished-project.webp"
-								alt="professional residential painting"
+								src="./assets/residential_repairs.webp"
+								alt="professional residential repair services"
 								class="residential_img"
 								loading="lazy"
 							/>
 						</figure>
 
 						<div class="service_info--wrapper">
-							<h2 class="service_type">Residential Painting Services</h2>
+							<h2 class="service_type">Residential Repair Services</h2>
 
 							<p>
-								At New Life Painting, we specialize in professional residential
-								painting services that refresh and transform your home's
-								interior and exterior. Whether you need a fresh coat of paint
-								for your living room, kitchen, or entire house, our experienced
-								team of residential painters in Maryland delivers exceptional
-								quality with every brushstroke. You can count on us to get the
-								job done!
+								Our experienced team specializes in a wide range of home
+								repairs, including drywall repair, carpentry, siding repair, and
+								more, ensuring your home remains in excellent condition. Whether
+								you're dealing with minor fixes or major renovations, we are
+								dedicated to delivering high-quality craftsmanship and reliable
+								service. Trust us to handle all your residential repair needs
+								with expertise and care, enhancing the comfort and value of your
+								home.
 							</p>
 
 							<div class="keypoints--wrapper">
 								<ul class="keypoint_list">
 									<ul class="keypoint_list">
-										<li class="keypoint">Rooms</li>
-										<li class="keypoint">Kitchens</li>
-										<li class="keypoint">Ceilings</li>
-										<li class="keypoint">Basements</li>
-										<li class="keypoint">Garages</li>
-										<li class="keypoint">Trim</li>
-										<li class="keypoint">Siding</li>
-										<li class="keypoint">Doors</li>
-										<li class="keypoint">Decks</li>
-										<li class="keypoint">Fences</li>
+										<li class="keypoint">Drywall</li>
+										<li class="keypoint">Touch-Ups</li>
+										<li class="keypoint">Floor Repairs</li>
+										<li class="keypoint">Cabinet Repairs</li>
+										<li class="keypoint">Elec. Repairs</li>
+										<li class="keypoint">Door / Window</li>
+										<li class="keypoint">Fence Repairs</li>
+										<li class="keypoint">Siding Repairs</li>
+										<li class="keypoint">Gutter Repairs</li>
+										<li class="keypoint">Deck / Patio</li>
 									</ul>
 								</ul>
 							</div>
@@ -93,40 +171,39 @@
 					<div class="content--container commercial--container">
 						<figure class="residential_img--wrapper">
 							<img
-								src="./assets/commercial-office.webp"
-								alt="professional commercial painting in Washington DC"
+								src="./assets/commercial_repairs.webp"
+								alt="professional commercial repairs in Washington DC"
 								class="residential_img"
 								loading="lazy"
 							/>
 						</figure>
 
 						<div class="service_info--wrapper">
-							<h2 class="service_type">Commercial Painting Services</h2>
+							<h2 class="service_type">Commercial Repair Services</h2>
 
 							<p>
-								we offer professional commercial painting services tailored to
-								meet the needs of businesses and commercial properties. Our
-								skilled commercial painters in Maryland provide interior and
-								exterior painting solutions that enhance the appearance and
-								durability of office buildings, retail spaces, restaurants, and
-								more. Using high-quality, low-VOC paints and efficient
-								techniques, we ensure minimal disruption to your operations
-								while delivering a flawless, long-lasting finish.
+								Our expert team is equipped to handle a variety of commercial
+								repairs, including drywall patching, ceiling tile replacement,
+								and exterior building maintenance, ensuring your business
+								property is safe, functional, and visually appealing. We
+								understand the unique needs of commercial spaces and provide
+								efficient, high-quality repair solutions to minimize downtime
+								and disruption. Trust us to keep your commercial property in
+								prime condition with our reliable and professional repair
+								services.
 							</p>
 
 							<div class="keypoints--wrapper">
 								<ul class="keypoint_list">
 									<ul class="keypoint_list">
-										<li class="keypoint">Offices</li>
-										<li class="keypoint">Waiting Rooms</li>
-										<li class="keypoint">Ceilings</li>
-										<li class="keypoint">Restaurants</li>
-										<li class="keypoint">Retail</li>
-										<li class="keypoint">Entrances</li>
-										<li class="keypoint">Stairs</li>
-										<li class="keypoint">Outdoor Seating</li>
-										<li class="keypoint">Fences</li>
-										<li class="keypoint">Exterior Features</li>
+										<li class="keypoint--2">Drywall</li>
+										<li class="keypoint--2">Touch - Ups</li>
+										<li class="keypoint--2">Floor Repairs</li>
+										<li class="keypoint--2">Elec. Repairs</li>
+										<li class="keypoint--2">Door / Window</li>
+										<li class="keypoint--2">Fence Repairs</li>
+										<li class="keypoint--2">Gutter Repairs</li>
+										<li class="keypoint--2">Exterior Repairs</li>
 									</ul>
 								</ul>
 							</div>
@@ -135,5 +212,67 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="quality_assurance">
+			<div class="container">
+				<div class="row">
+					<h2 class="section_header quality_header">
+						Quality Assurance Commitment
+					</h2>
+					<p>
+						Regardless of the scale or nature of the project, our quality
+						assurance process includes thorough inspections, attention to
+						specific project requirements, and the use of top-tier materials.
+						Your satisfaction is at the forefront of our mission, and we take
+						pride in our ability to turn your vision into a reality that stands
+						the test of time, whether it's in the comfort of your home or the
+						success of your commercial venture. Choose New Life Painting
+						Services for a seamless blend of craftsmanship and commitment,
+						ensuring a finish that surpasses expectations in every project we
+						undertake.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer_container">
+				<ul class="footer_list">
+					<li class="footer_link">
+						<a href="./quality-painting-services">Painting Services</a>
+					</li>
+					<li class="footer_link">
+						<a href="./comprehensive-repair-services">Repair Services</a>
+					</li>
+					<li class="footer_link">
+						<a href="./reliable-maintenance-services"
+							>Maintenance Services</a
+						>
+					</li>
+					<li class="footer_link">
+						<a href="./expert-renovation-services">Renovation Services</a>
+					</li>
+				</ul>
+
+				<p>We are insured and bonded for your peace of mind</p>
+				<p>MHIC-158860</p>
+
+				<div class="contact_wrapper" id="contact">
+					<p>For a free estimate give is a call or send us an email.</p>
+
+					<a href="tel:240-501-5958" class="phone_link">240.501.5958</a>
+					<a
+						href="mailto:info@newlifepaintingservicesllc.com"
+						class="email_link"
+						>info@newlifepaintingservicesllc.com
+					</a>
+				</div>
+
+				<div class="copyright">
+					<p>© 2024 New Life Painting Services. All Rights Reserved</p>
+					<p>Web Creation: Victor Lopez</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

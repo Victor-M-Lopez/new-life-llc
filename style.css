@@ -890,10 +890,6 @@ footer {
 		font-size: 14px;
 	}
 
-	.page_title-info--container {
-		height: 400px;
-	}
-
 	#company_title {
 		font-size: 20px;
 	}
@@ -901,18 +897,19 @@ footer {
 	.company_sub--title {
 		font-size: 16px;
 	}
-
-	#service--btn,
-	#contact--btn {
-		font-size: 14px;
-		padding: 4px 16px;
-	}
 	
 	.title_container {
-		top: 38%;
+		top: 30%;
+		width: auto;
+		text-align: center;
 	}
 
 	.nav_modal--list {
 		font-size: 14px;
+	}
+
+	.landing_page_btn--container {
+		flex-direction: column;
+		align-items: center;
 	}
 }

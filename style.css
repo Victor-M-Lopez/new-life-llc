@@ -681,9 +681,97 @@ footer {
 	}
 }
 
+@media (max-width: 998px) {
+	#hamburger_menu {
+		display: flex;
+	}
+	.nav_list {
+		display: none;
+	}
+
+	.body_text-container {
+		width: 80%;
+	}
+
+	.service_icon-container {
+		padding: 12px;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.heroe_service-box {
+		width: calc(100% / 2.3);
+	}
+
+	.about-container {
+		flex-direction: column-reverse;
+		gap: 24px;
+	}
+
+	.about_img-wrapper {
+		width: 80%;
+	}
+	.text_container {
+		width: 100%;
+	}
+
+	.locations_text-container {
+		flex-wrap: wrap;
+	}
+
+	.location {
+		width: 40%;
+	}
+
+	.location_text {
+		width: 80%;
+	}
+
+	#background_image {
+		height: 600px;
+	}
+
+	.keypoints--container {
+		flex-wrap: wrap;
+	}
+
+	.keypoint-box {
+		width: calc(100% / 2);
+		margin-bottom: 32px;
+	}
+
+	.choose_us--text,
+	.choose_us--text--2 {
+		width: 80%;
+	}
+
+	.choose_us--text--2 {
+		top: 140px;
+	}
+
+	.projects_row {
+		flex-direction: column;
+	}
+
+	.projects_container {
+		text-align: center;
+	}
+
+	.projects_container {
+		width: 80%;
+	}
+
+	.carousel {
+		width: 600px;
+	}
+}
+
 /* 776px */
 @media (max-width: 776px) {
 	.service--container {
 		grid-template-columns: repeat(1, 300px);
 	}
+}
+
+@media (max-width: 500px) {
 }

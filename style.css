@@ -128,9 +128,7 @@ nav.solid {
 }
 
 #nav_logo {
-	width: 65px;
-	visibility: hidden;
-	transition: visibility 100ms ease;
+	width: 50px;
 }
 
 #hamburger_menu {
@@ -219,51 +217,38 @@ nav.solid {
 	filter: brightness(0.6);
 }
 
-#landing_page--logo,
-#title_container,
-.landing_page_btn--container {
+#title_container {
 	position: absolute;
-}
-
-#landing_page--logo {
-	width: 250px;
-	top: 25%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .title_container {
 	position: absolute;
 	color: #fff;
-	top: 52%;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	width: 100%;
-	padding: 0 32px;
+	top: 30%;
+	left: 24px;
+	right: 24px;
+	width: 80%;
 }
 
 #company_title {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 600;
 }
 
 .company_sub--title {
-	font-size: 32px;
+	font-size: 20px;
 }
 
 .landing_page_btn--container {
-	bottom: 32px;
-	left: 32px;
+	margin-top: 12px;
 	display: flex;
-	flex-direction: column;
-	gap: 12px;
+	gap: 24px;
 }
 
 #service--btn,
 #contact--btn {
 	border: none;
-	padding: 8px 16px;
+	padding: 4px 16px;
 	font-size: 16px;
 }
 
@@ -271,46 +256,27 @@ nav.solid {
 	background-color: var(--blue-color);
 }
 
-#service--btn a {
+#service--btn {
 	color: #fff;
 }
 
-#contact--btn a {
-	color: #000;
+#contact--btn {
+	color: #fff;
+	border: 1px solid #fff;
 }
 
-.landing_page_btn--container,
-#landing_page--logo,
 .title_container {
 	z-index: 50;
 }
 
 /* about us */
-.service_row {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .section_header {
 	margin-bottom: 8px;
 	text-align: center;
 }
 
-.about_us--container {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-#map {
-	position: absolute;
-	top: -3px;
-	z-index: 1;
-	width: 450px;
-	right: 32px;
+.about_us--container p {
+	margin-bottom: 24px;
 }
 
 /* service */
@@ -350,7 +316,10 @@ nav.solid {
 
 .service_info--container {
 	width: 300px;
-	background-color: var(--blue-color);
+	background-color: var(--black-color);
+	border-bottom: .5px solid #fff;
+	border-left: .5px solid #fff;
+	border-right: .5px solid #fff;
 	height: 200px;
 	color: #fff;
 	padding: 8px;
@@ -366,7 +335,7 @@ nav.solid {
 }
 
 .service_icon {
-	width: 30px;
+	width: 20px;
 	position: absolute;
 	bottom: 8px;
 	right: 8px;
@@ -400,7 +369,7 @@ nav.solid {
 }
 
 #background_image {
-	background-image: url('./assets/choose_us-img.webp');
+	background-image: url('./assets/painting-project-materials.webp');
 	width: 100%;
 	background-position: center;
 	background-size: cover;
@@ -872,10 +841,6 @@ footer {
 		font-size: 14px;
 	}
 
-	.title_container {
-		top: 55%;
-	}
-
 	#company_title {
 		font-size: 32px;
 	}
@@ -913,16 +878,6 @@ footer {
 
 	.projects_container {
 		width: 100%;
-	}
-
-	.about_us--container {
-		margin-top: 320px;
-		width: 100%;
-	}
-
-	#map {
-		width: 350px;
-		right: 12px;
 	}
 
 	.phone_link::before,
@@ -1013,26 +968,12 @@ footer {
 		font-size: 16px;
 	}
 
-	.landing_page_btn--container {
-		width: 100%;
-		left: 50%;
-		bottom: 48%;
-		transform: translateX(-50%);
-		flex-direction: row;
-		justify-content: center;
-	}
-
 	#service--btn,
 	#contact--btn {
 		font-size: 14px;
 		padding: 4px 16px;
 	}
-
-	#landing_page--logo {
-		width: 100px;
-		top: 26%;
-	}
-
+	
 	.title_container {
 		top: 38%;
 	}

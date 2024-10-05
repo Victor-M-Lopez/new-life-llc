@@ -499,14 +499,14 @@ nav.solid {
 }
 
 .phone_link::before {
-	content: url('./assets/phone_icon.svg');
+	content: url('./assets/phone-icon.svg');
 	display: inline-block;
 	vertical-align: -4px;
 	margin-right: 8px;
 }
 
 .email_link::before {
-	content: url('./assets/email_icon.svg');
+	content: url('./assets/email-icon.svg');
 	display: inline-block;
 	vertical-align: -4px;
 	margin-right: 8px;
@@ -609,7 +609,9 @@ footer {
 }
 
 .repair_img {
-	background-image: url('./assets/repairs.webp');
+	background-image: url('/assets/repair-services-residential-commercial.webp');
+	background-position: center;
+	background-size: cover;
 }
 
 .keypoint,
@@ -634,7 +636,9 @@ footer {
 
 /* maintenance */
 .maintenance_img {
-	background-image: url('./assets/maintenance.webp');
+	background-image: url('/assets/maintenance-services-power-washing.webp');
+	background-size: cover;
+	background-position: center;
 }
 
 #quality_assurance {
@@ -643,7 +647,9 @@ footer {
 
 /* renovation */
 .renovation_img {
-	background-image: url('./assets/remodeling.webp');
+	background-image: url('/assets/remodeling-services-flooring.webp');
+	background-size: cover;
+	background-position: center;
 }
 
 .quality_header {

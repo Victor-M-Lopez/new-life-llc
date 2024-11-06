@@ -9,10 +9,7 @@
 }
 
 :root {
-	--blue-color: #1b5083;
-	--light_blue-color: rgba(27, 80, 141, 0.4);
-	--black-color: #333333;
-	--gray-color: #f0f0f0;
+	
 }
 
 li {
@@ -28,11 +25,7 @@ a {
 #about,
 .service--container,
 .service_info--container,
-#choose_us,
-#projects,
-.carousel,
-footer,
-#painting-services {
+#choose_us {
 	position: relative;
 }
 
@@ -185,67 +178,8 @@ nav.solid {
 	filter: brightness(0.6);
 }
 
-#title_container {
-	position: absolute;
-}
-
-.title_container {
-	position: absolute;
-	color: #fff;
-	top: 30%;
-	left: 24px;
-	right: 24px;
-	width: 80%;
-}
-
-#company_title {
-	font-size: 40px;
-	font-weight: 600;
-}
-
-.company_sub--title {
-	font-size: 20px;
-}
-
-.landing_page_btn--container {
-	margin-top: 12px;
-	display: flex;
-	gap: 24px;
-}
-
-#service--btn,
-#contact--btn {
-	border: none;
-	padding: 4px 16px;
-	font-size: 16px;
-}
-
-#service--btn {
-	background-color: var(--blue-color);
-}
-
-#service--btn {
-	color: #fff;
-}
-
-#contact--btn {
-	color: #fff;
-	border: 1px solid #fff;
-}
-
-.title_container {
-	z-index: 50;
-}
-
 /* about us */
-.section_header {
-	margin-bottom: 8px;
-	text-align: center;
-}
 
-.about_us--container p {
-	margin-bottom: 24px;
-}
 
 /* service */
 #services {
@@ -389,274 +323,11 @@ nav.solid {
 }
 
 /* portfolio */
-.carousel {
-	width: 50%;
-	height: 500px;
-	max-width: 600px;
-	overflow: hidden;
-}
 
-.carousel-images {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
 
-.carousel-images img {
-	width: 100%;
-}
-
-.carousel-button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-	z-index: 80;
-	transition: background-color 0.3s;
-}
-
-.carousel-button:hover {
-	background-color: rgba(0, 0, 0, 0.9);
-}
-
-.prev {
-	left: 10px;
-}
-
-.next {
-	right: 10px;
-}
-
-.projects_container {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-}
-
-.projects_row {
-	display: flex;
-	justify-content: space-between;
-	gap: 100px;
-	align-items: center;
-}
-
-.square_dots2 {
-	position: absolute;
-	width: 100px;
-	z-index: 1;
-	top: 100px;
-	left: 40%;
-}
 
 /* contact */
-#contact {
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	align-items: flex-start;
-}
 
-.phone_link,
-.email_link {
-	color: #fff;
-}
-
-.phone_link::before {
-	content: url('./assets/phone-icon.svg');
-	display: inline-block;
-	vertical-align: -4px;
-	margin-right: 8px;
-}
-
-.email_link::before {
-	content: url('./assets/email-icon.svg');
-	display: inline-block;
-	vertical-align: -4px;
-	margin-right: 8px;
-}
-
-/* footer */
-footer {
-	width: 100%;
-}
-
-.footer_container {
-	background-color: var(--black-color);
-	padding: 24px;
-	height: 300px;
-	color: #fff;
-}
-
-.footer_list {
-	margin-bottom: 18px;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-.footer_link a {
-	color: #fff;
-}
-
-#contact {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: var(--blue-color);
-	width: 60%;
-	padding: 16px;
-	border-bottom-left-radius: 32px;
-}
-
-.copyright {
-	position: absolute;
-	right: 8px;
-	bottom: 8px;
-}
-
-.copyright p {
-	font-size: 12px;
-}
-
-/* paint service page */
-
-.page_sub-heading {
-	width: 700px;
-	margin-bottom: 32px;
-}
-
-.residential_img--wrapper {
-	width: 50%;
-	overflow: hidden;
-}
-
-.residential_img {
-	width: 100%;
-	display: block;
-}
-
-.service_info--wrapper {
-	width: 55%;
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-}
-
-.content--container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 32px;
-}
-
-.keypoint_list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.keypoint:hover,
-.keypoint--2:hover,
-.keypoint--3:hover {
-	background-color: var(--blue-color);
-	color: #fff;
-	cursor: default;
-}
-
-#commercial_services {
-	background-color: var(--gray-color);
-}
-
-.commercial--container {
-	flex-direction: row-reverse;
-}
-
-.repair_img {
-	background-image: url('/assets/repair-services-residential-commercial.webp');
-	background-position: center;
-	background-size: cover;
-}
-
-.keypoint,
-.keypoint--2,
-.keypoint--3 {
-	text-align: center;
-	width: calc(100% / 5.1);
-	margin-bottom: 16px;
-	border: 1px solid var(--blue-color);
-	transition: color 300ms ease;
-	transition: background-color 300ms ease;
-	font-size: 14.5px;
-}
-
-.keypoint--2 {
-	width: calc(100% / 4.1);
-}
-
-.keypoint--3 {
-	width: calc(100% / 3.1);
-}
-
-/* maintenance */
-.maintenance_img {
-	background-image: url('/assets/maintenance-services-power-washing.webp');
-	background-size: cover;
-	background-position: center;
-}
-
-#quality_assurance {
-	width: 75%;
-}
-
-/* renovation */
-.renovation_img {
-	background-image: url('/assets/remodeling-services-flooring.webp');
-	background-size: cover;
-	background-position: center;
-}
-
-.quality_header {
-	text-align: start;
-}
-
-.about_header {
-	text-align: start;
-}
-
-.page_btn--container {
-	width: 100%;
-	display: flex;
-}
-
-/*service*/
-#service_home {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-}
-
-.paint_img {
-	background-image: url('/assets/painting-services-section-image.webp');
-	background-position: center;
-	background-size: cover;
-}
-
-.service_text {
-	color: #fff;
-	margin-right: 12px;
-}
-
-.service_overlay {
-	position: absolute;
-	inset: 0;
-	background-color: var(--black-color);
-	opacity: 0.5;
-}
 
 /* 1380px */
 @media (max-width: 1380px) {
@@ -742,21 +413,6 @@ footer {
 		width: 80%;
 	}
 
-	.projects_row {
-		flex-direction: column-reverse;
-		gap: 24px;
-		text-align: center;
-	}
-
-	.carousel {
-		width: 400px;
-		height: 400px;
-	}
-
-	.projects_container {
-		width: 80%;
-	}
-
 	h2 {
 		font-size: 20px;
 	}
@@ -773,13 +429,6 @@ footer {
 	a,
 	li {
 		font-size: 14px;
-	}
-
-	#company_title {
-		font-size: 32px;
-	}
-	.company_sub--title {
-		font-size: 24px;
 	}
 
 	.page_title-info--container {
@@ -803,15 +452,6 @@ footer {
 
 	#nav_logo {
 		width: 45px;
-	}
-
-	.carousel {
-		width: 350px;
-		height: 350px;
-	}
-
-	.projects_container {
-		width: 100%;
 	}
 
 	.phone_link::before,
@@ -857,24 +497,12 @@ footer {
 		width: 360px;
 	}
 
-	.footer_link a {
-		font-size: 12px;
-	}
-
 	#contact p {
 		font-size: 12px;
 	}
 
 	#contact {
 		width: 95%;
-	}
-
-	.footer_container {
-		height: 400px;
-	}
-
-	.footer_list {
-		margin-top: 124px;
 	}
 
 	.copyright p {
@@ -890,26 +518,7 @@ footer {
 		font-size: 14px;
 	}
 
-	#company_title {
-		font-size: 20px;
-	}
-
-	.company_sub--title {
-		font-size: 16px;
-	}
-	
-	.title_container {
-		top: 30%;
-		width: auto;
-		text-align: center;
-	}
-
 	.nav_modal--list {
 		font-size: 14px;
-	}
-
-	.landing_page_btn--container {
-		flex-direction: column;
-		align-items: center;
 	}
 }

@@ -86,6 +86,14 @@ li {
 	text-align: center;
 }
 
+.color_white {
+	color: #F8FDFF;
+}
+
+.color_white-faded {
+	color: #F8FDFF50;
+}
+
 /* nav, home */
 nav {
 	position: fixed;
@@ -244,7 +252,7 @@ video {
 .about_row {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .about_text-container {
@@ -266,4 +274,114 @@ video {
 .about_img {
 	display: block;
 	width: 100%;
+}
+
+/* services */
+#services {
+	background-color: #25303B;
+}
+
+.service_container {
+	margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+	justify-content: center;
+  gap: 25px;
+}
+
+.service-box {
+	position: relative;
+	width: 300px;
+  overflow: hidden;
+  z-index: 80;
+  transition: scale 300ms ease;
+	border-radius: 8px;
+}
+
+.service-box:hover {
+	scale: .98;
+}
+
+.service_img {
+	width: 300px;
+  height: 200px;
+  display: block;
+}
+
+.service_info-container {
+	width: 300px;
+  background-color: #25303B;
+  border-bottom: .5px solid #fff;
+  border-left: .5px solid #fff;
+  border-right: .5px solid #fff;
+  height: 200px;
+  color: #fff;
+  padding: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.service_name {
+	margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.service-icon {
+	position: absolute;
+	bottom: 8px;
+	width: 25px;
+	right: 8px;
+}
+
+/* keypoints */
+
+#keypoints {
+	background-image: url('assets/painting-project-materials.webp');
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	background-attachment: local;
+	position: relative;
+}
+
+.keypoints_text-container {
+	position: absolute;
+	top: 40;
+	color: #F8FDFF;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	z-index: 2;
+}
+
+.keypoints_overlay {
+	opacity: 0.65;
+}
+
+.keypoints-container {
+	position: absolute;
+	z-index: 2;
+	bottom: 56px;
+	left: 24px;
+	right: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.keypoint-box {
+	color: #F8FDFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.keypoints-icon {
+	width: 40px;
+}
+
+.group-icon {
+	width: 50px;
 }

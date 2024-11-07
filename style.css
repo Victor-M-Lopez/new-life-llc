@@ -31,11 +31,15 @@
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: #F8FDFF;
+}
+
 h1,h2,h3 {
 	font-weight: 700;
 }
 
-p,a,span,button {
+p,a,button,span {
 	font-weight: 200;
 }
 
@@ -43,8 +47,78 @@ a {
 	text-decoration: none;
 }
 
+a:hover,
+button:hover {
+	cursor: pointer;
+}
+
+a, button {
+	border-radius: 8px;
+}
+
 li {
 	list-style-type: none;
+}
+
+.container {
+	padding: 4rem 0;
+}
+
+.row {
+	padding: 0 24px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.heading-top1 {
+	text-align: center;
+}
+
+.heading-top1,
+.heading-top2 {
+	color: #00000075;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.heading1 {
+	text-align: center;
+}
+
+/* nav, home */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 24px;
+}
+
+.nav_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav_list {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.contact_btn-nav {
+	padding: 8px 16px;
+	background-color: #1B5083;
+}
+
+.nav_link {
+	color: #fff;
+}
+
+.company_logo {
+	width: 50px;
 }
 
 #home {
@@ -69,11 +143,12 @@ video {
 }
 
 .home_text-container {
-	top: 35%;
+	top: 30%;
 	left: 24px;
-	width: 800px;
+	width: 680px;
 	position: absolute;
 	color:#fff;
+	z-index: 5;
 }
 
 .home_sub-heading {
@@ -83,10 +158,11 @@ video {
 .home_btn,
 .contact_btn {
 	color: #fff;
+	padding: 12px;
 }
 
 .btn-container {
-	margin-top: 32px;
+	margin-top: 24px;
 	display: flex;
 	align-items: center;
 	gap: 32px;
@@ -94,10 +170,79 @@ video {
 
 .contact_btn {
 	background-color: #1B5083;
-	padding: 16px 24px;
 }
 
 .home_btn {
 	border: 1px solid #fff;
-	padding: 16px 24px;
+}
+
+.service_home-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
+	background-color: #1b518375;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	font-size: 14px;
+	gap: 56px;
+}
+
+.home_service-box {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.home_service-icon {
+	width: 20px;
+}
+
+/* about */
+#about {
+	position: relative;
+	overflow: hidden;
+}
+
+.location_name-container {
+	margin: 32px 0 56px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.location-box {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.location_text {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.crab {
+	position: absolute;
+	bottom: 100px;
+	right: -20px;
+	width: 200px;
+	z-index: 5;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: #00000025;
+}
+
+.company_statement-container {
+	border: 1px solid red;
+	background-color: #F8FDFF;
+	z-index: 100;
 }

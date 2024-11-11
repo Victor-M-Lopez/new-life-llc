@@ -725,7 +725,7 @@ footer {
 	}
 
 	.about_img-wrapper {
-		width: 80%;
+		width: 100%;
 	}
 
 	.about_text-container {
@@ -838,6 +838,7 @@ footer {
 	}
 
 	.home_text-container {
+		top: 25%;
 		left: 24px;
 		right: 24px;
 		width: auto;
@@ -897,6 +898,7 @@ footer {
 
 	#keypoints {
 		height: 680px;
+		background-position: left;
 	}
 
 	.keypoints-container {
@@ -905,6 +907,19 @@ footer {
 
 	.keypoint-box {
 		width: calc(100% / 1);
+		padding: 16px 0;
+	}
+
+	.keypoint-box p {
+		font-size: 14px;
+	}
+
+	.group-icon {
+		width: 10px;
+	}
+
+	.keypoints-icon {
+		width: 35px;
 	}
 
 	.slider {
@@ -913,6 +928,7 @@ footer {
 
 	.portfolio_text-container {
 		width: 95%;
+		text-align: center;
 	}
 
 	.review_box {

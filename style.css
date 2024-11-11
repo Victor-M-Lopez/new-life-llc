@@ -101,7 +101,7 @@ nav {
 	left: 0;
 	right: 0;
 	z-index: 100;
-	padding: 24px;
+	padding: 16px;
 	background-color: transparent;
 	transition: background-color 300ms ease;
 }
@@ -110,6 +110,65 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+#hamburger_menu {
+	background-color: transparent;
+	border: none;
+	display: none;
+}
+
+#nav_modal {
+	position: fixed;
+	inset: 0;
+	background-color: #333333;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 500ms ease-in-out, opacity 300ms ease;
+}
+
+#nav_modal.show_modal {
+	visibility: visible;
+	opacity: 1;
+}
+
+.nav_modal--container {
+	position: relative;
+}
+
+.nav_modal--container {
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#exit-btn {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 34px;
+	right: 26px;
+}
+
+.nav_modal--list {
+	color: #fff;
+	font-size: 16px;
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+#license_number {
+	position: absolute;
+	color: #fff;
+	bottom: 24px;
+	right: 16px;
 }
 
 .nav_list {
@@ -605,7 +664,7 @@ footer {
 }
 
 .footer_container {
-	padding: 32px 0;
+	padding: 56px 0;
 }
 
 .footer_row {
@@ -634,17 +693,19 @@ footer {
 
 .footer_info-text {
 	top: 32px;
+	right: 24px;
 }
 
 .footer_info-text,
 .footer_info-text2 {
 	position: absolute;
-	right: 24px;
 	color: #F8FDFF;
-	text-align: end;
+	text-align:end;
+	width: 312px;
 }
 
 .footer_info-text2 {
+	right: 24px;
 	bottom: 4px;
 	font-size: 12px;
 }
@@ -742,4 +803,35 @@ footer {
 	.keypoints_text-container {
 		width: 80%;
 	}
+
+	#hamburger_menu {
+		display: flex;
+	}
+
+	.nav_list {
+		display: none;
+	}
+
+	.nav_modal--list {
+		gap: 16px;
+	}
+
+	.contact_container {
+		width: 100%;
+		padding: 16px;
+	}
+
+	.contact_info-container {
+		font-size: 14px;
+	}
+
+	.contact_row {
+		padding: 0 12px;
+	}
 }
+
+/* for smaller size */
+
+/* nav_modal--list {
+ font-size: 14px;
+} */

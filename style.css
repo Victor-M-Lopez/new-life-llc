@@ -771,7 +771,7 @@ footer {
 	.service_home-container {
 		gap: 16px;
 		flex-wrap: wrap;
-		padding: 8px;
+		padding: 2px;
 	}
 
 	.location_name-container {

@@ -10,32 +10,23 @@
 		<title>New Life Painting | Painting Services</title>
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="/script_services.js" defer></script>
+		<script src="script_services.js" defer></script>
 	</head>
 	<body>
 		<nav>
 			<div class="nav_container">
-				<img
-					src="/assets/new-life-painting-logo.svg"
-					alt="new life painting services logo"
-					id="nav_logo"
-					loading="lazy"
-				/>
+				<img src="assets/new-life-painting-logo.svg" alt="" class="company_logo">
 
 				<ul class="nav_list">
-					<li class="nav_link"><a href="/index.html" class="nav_links">HOME</a></li>
-					<li class="nav_link"><a href="/index.html#about" class="nav_links">ABOUT</a></li>
-					<li class="nav_link">
-						<a href="/index.html#services" class="nav_links">SERVICES</a>
-					</li>
-					<li class="nav_link">
-						<a href="/index.html#projects" class="nav_links">PROJECTS</a>
-					</li>
-					<a href="#contact" id="nav_contact--btn">CONTACT</a>
+					<li><a href="#" class="nav_link">HOME</a></li>
+					<li><a href="#" class="nav_link">ABOUT</a></li>
+					<li><a href="#" class="nav_link">SERVICES</a></li>
+					<li><a href="#" class="nav_link">PAST PROJECTS</a></li>
+					<li><a href="#" class="nav_link contact_btn-nav">CONTACT</a></li>
 				</ul>
 
 				<button id="hamburger_menu">
-					<img src="/assets/hamburger-menu-icon.svg" alt="hamburger menu for nav" />
+					<img src="assets/hamburger-menu-icon.svg" alt="hamburger menu for nav" />
 				</button>
 			</div>
 		</nav>
@@ -43,17 +34,17 @@
 		<div id="nav_modal">
 			<div class="nav_modal--container">
 				<button id="exit-btn">
-					<img src="/assets/exit-icon.svg" alt="exit buttom for modal" />
+					<img src="assets/exit-icon.svg" alt="exit buttom for modal" />
 				</button>
 
 				<ul class="nav_modal--list">
-					<li><a href="index.html" class="nav_modal--list">HOME</a></li>
+					<li><a href="#home" class="nav_modal--list">HOME</a></li>
 					<li>
-						<a href="/index.html#about" class="nav_modal--list">ABOUT</a>
+						<a href="#about" class="nav_modal--list">ABOUT</a>
 					</li>
-					<li><a href="/index.html#services" class="nav_modal--list">SERVICES</a></li>
-					<li><a href="/index.html#projects" class="nav_modal--list">PROJECTS</a></li>
-					<li><a href="/index.html#contact" class="nav_modal--list">CONTACT</a></li>
+					<li><a href="#services" class="nav_modal--list">SERVICES</a></li>
+					<li><a href="#projects" class="nav_modal--list">PROJECTS</a></li>
+					<li><a href="#contact" class="nav_modal--list">CONTACT</a></li>
 					<div class="line"></div>
 					<li>
 						<a href="/quality-painting-services.html" class="nav_modal--list"
@@ -85,5 +76,20 @@
 			</div>
 		</div>
 
+		<section id="service_home">
+			<div class="row">
+				<div class="service_page-container">
+					<h1 class="service-h1">OUR QUALITY PAINTING SERVICES</h1>
+					
+					<p class="service-para">
+						A professional team of painters at your service in Maryland for all your projects.
+					</p>
+
+					<button class="contact_btn">Get a free quote today!</button>
+				</div>
+
+				<figure class="service_home-wrapper"></figure>
+			</div>
+		</section>
 	</body>
 </html>

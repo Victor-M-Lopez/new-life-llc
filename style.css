@@ -747,9 +747,30 @@ footer {
 	height: 300px;
 	overflow: hidden;
 	border-radius: 16px;
-	background: url('assets/painting-services-section-image.webp');
-	background-position: center;
+}
+
+.paint_service {
+	background: url('assets/painting-services-section-image.webp');	
 	background-size: cover;
+	background-position: center;
+}
+
+.repair_service {
+	background: url('assets/repair-services-residential-commercial.webp');
+	background-size: cover;
+	background-position: center;
+}
+
+.maintenance_service {
+	background: url('assets/maintenance-services-power-washing.webp');
+	background-size: cover;
+	background-position: center;
+}
+
+.remodel_service {
+	background: url('assets/remodeling-services-flooring.webp');
+	background-size: cover;
+	background-position: center;
 }
 
 /* JS classes */

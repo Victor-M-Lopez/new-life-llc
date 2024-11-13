@@ -832,6 +832,7 @@ footer {
 	width: 800px;
 	height: 500px;
 	left: -150px;
+	border-radius: 8px;
 }
 
 .residential_row {
@@ -987,6 +988,10 @@ footer {
 	.contact_row {
 		padding: 0 12px;
 	}
+
+	.residential_img-wrapper {
+		height: 200px;
+	}
 }
 
 /* for smaller size */
@@ -1105,6 +1110,10 @@ footer {
 
 	.service_description {
 		font-size: 14px;
+	}
+
+	.service_home-wrapper {
+		height: 150px;
 	}
 }
 

@@ -639,7 +639,8 @@ form {
 	gap: 16px;
 }
 
-.contact_info-container a {
+.contact_info-container a,
+.contact_info-container p {
 	color: #F8FDFF;
 }
 

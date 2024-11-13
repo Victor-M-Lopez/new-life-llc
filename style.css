@@ -849,6 +849,13 @@ footer {
 	justify-content: space-between;
 }
 
+.line {
+	width: 80%;
+	height: 1px;
+	background-color: #00000025;
+	margin: 0 auto;
+}
+
 /* JS classes */
 .solid {
 	background-color: #333333EE;
@@ -990,7 +997,7 @@ footer {
 	}
 
 	.residential_img-wrapper {
-		height: 200px;
+		height: 400px;
 	}
 }
 

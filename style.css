@@ -733,6 +733,9 @@ footer {
 	right: 24px;
 	text-align: center;
 	color: #F8FDFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .service-h1 {
@@ -838,14 +841,21 @@ footer {
 	justify-content: space-between;
 }
 
+.commercial_row {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
 /* JS classes */
 .solid {
 	background-color: #333333EE;
 	transition: background-color 300ms ease;
 }
 
-/* 1172px */
-@media (max-width: 1172px) {
+/* 1175px */
+@media (max-width: 1175px) {
 	/* about */
 	.about_row {
 		flex-direction: column-reverse;
@@ -873,6 +883,27 @@ footer {
 
 	.portfolio_text-container {
 		width: 80%;
+	}
+
+	.residential_row,
+	.commercial_row {
+		flex-direction: column;
+		gap: 56px;
+	}
+
+	.residential_text-container {
+		width: 100%;
+	}
+
+	.residential_img-wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.residential_service-img {
+		width: 100%;
+		height: auto;
+		left: 0;
 	}
 }
 
@@ -963,6 +994,14 @@ footer {
 @media (max-width: 775px) {
 	.page_h1 {
 		text-align: center;
+	}
+
+	.service-h1 {
+		font-size: 24px;
+	}
+
+	.service-para {
+		width: 100%;
 	}
 
 	.home_text-container {
@@ -1062,6 +1101,10 @@ footer {
 	.review_box {
 		width: 100%;
 		height: 500px;
+	}
+
+	.service_description {
+		font-size: 14px;
 	}
 }
 

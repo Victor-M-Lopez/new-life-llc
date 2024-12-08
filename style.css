@@ -102,6 +102,12 @@ button {
 	color: #F8FDFF50;
 }
 
+.contact_btn:hover,
+.contact_btn-nav:hover,
+.home_btn:hover {
+	background-color: #FFF;
+	color: #000;
+}
 /* nav, home */
 nav {
 	position: fixed;
@@ -185,6 +191,11 @@ nav {
 	gap: 32px;
 }
 
+.contact_btn,
+.contact_btn-nav {
+	transition: background-color 300ms ease, color 300ms ease;
+}
+
 .contact_btn-nav {
 	padding: 8px 16px;
 	background-color: #1B5083;
@@ -255,6 +266,9 @@ video {
 
 .home_btn {
 	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	transition: background-color 300ms ease, color 300ms ease;
 }
 
 .service_home-container {
@@ -561,12 +575,6 @@ video {
 	align-items: center;
 }
 
-.review_btn {
-	color: #F8FDFF;
-	background-color: #1B5083;
-	padding: 16px 24px;
-}
-
 /* contact */
 .contact_container {
 	width: 800px;
@@ -664,6 +672,10 @@ form {
 	content: url('assets/address-icon.svg');
 	vertical-align: -4px;
 	margin-right: 8px;
+}
+
+.hidden {
+	display: none;
 }
 
 /* footer */

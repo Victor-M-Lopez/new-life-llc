@@ -731,6 +731,10 @@ footer {
 	font-size: 12px;
 }
 
+.footer_card-icon {
+	vertical-align: -2px;
+}
+
 /* service page */
 #service_home {
 	position: relative;
@@ -1012,6 +1016,17 @@ footer {
 	.residential_img-wrapper {
 		height: 400px;
 	}
+
+	.footer_info-text {
+		left: 24px;
+		top: 350px;
+		text-align: start;
+		width: 80%;
+	}
+
+	footer {
+		height: 500px;
+	}
 }
 
 /* for smaller size */
@@ -1045,15 +1060,11 @@ footer {
 		grid-template-columns: repeat(1, 300px);
 	}
 
-	footer {
-		height: 500px;
-	}
-
 	.footer_info-text {
 		left: 24px;
-		top: 350px;
-		text-align: start;
-		width: 80%;
+		right: 24px;
+		text-align: center;
+		width: auto;
 	}
 
 	.footer_info-text2 {
@@ -1075,6 +1086,21 @@ footer {
 
 	.home_sub-heading {
 		width: auto;
+	}
+}
+
+@media (max-width: 605px) {
+	footer {
+		height: 800px;
+	}
+
+	.footer_info-text {
+		top: 650px;
+	}
+
+	.footer_link-container {
+		flex-direction: column;
+		gap: 32px;
 	}
 }
 

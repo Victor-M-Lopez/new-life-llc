@@ -731,9 +731,16 @@ footer {
 	font-size: 12px;
 }
 
+.card-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
 .footer_card-icon {
 	vertical-align: -2px;
 	margin-right: 4px;
+	width: 50px;
 }
 
 /* service page */
@@ -1088,20 +1095,18 @@ footer {
 	.home_sub-heading {
 		width: auto;
 	}
-}
 
-@media (max-width: 605px) {
+	.footer_link-container {
+		flex-direction: column;
+		gap: 32px;
+	}
+
 	footer {
 		height: 800px;
 	}
 
 	.footer_info-text {
 		top: 650px;
-	}
-
-	.footer_link-container {
-		flex-direction: column;
-		gap: 32px;
 	}
 }
 

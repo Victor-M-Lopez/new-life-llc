@@ -580,6 +580,25 @@ video {
 	align-items: center;
 }
 
+.review-btn-container {
+	display: flex;
+	gap: 16px;
+}
+
+.review-btn {
+	border: 1px solid #1B5083;
+}
+
+.thumbtack-btn {
+	background-color: transparent;
+	border: 1px solid #009FD9;
+	color: #000;
+}
+
+.thumbtack-btn:hover {
+	background-color: #009FD9;
+	color: #fff;
+}
 /* contact */
 .contact_container {
 	width: 800px;
@@ -1171,6 +1190,11 @@ footer {
 
 	.service_home-wrapper {
 		height: 150px;
+	}
+
+	.review-btn-container {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
